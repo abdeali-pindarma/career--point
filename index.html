@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Point - Your Gateway to Success</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Login Page -->
+        <div id="loginPage" class="page login-page active">
+            <div class="login-container">
+                <div class="brand-section">
+                    <div class="logo-wrapper">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L1 12h3v9h6v-7h4v7h6v-9h3L12 2z"/>
+                            </svg>
+                        </div>
+                        <h1 class="brand-title">Welcome to Career Point</h1>
+                        <p class="brand-tagline">Your Gateway to Success</p>
+                    </div>
+                </div>
+
+                <div class="login-form-wrapper">
+                    <form id="loginForm" class="login-form">
+                        <h2 class="form-title">Sign In to Your Account</h2>
+
+                        <div class="form-group">
+                            <label for="username" class="form-label">Username or Email</label>
+                            <input type="text" id="username" name="username" class="form-control" placeholder="Enter your username or email" required>
+                            <div class="error-message" id="usernameError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
+                            <div class="error-message" id="passwordError"></div>
+                        </div>
+
+                        <a href="dashboard.html"> <button type="submit" class="btn btn--primary btn--full-width login-btn" id="loginBtn">
+                            <span class="btn-text">Sign In</span>
+                            <div class="loading-spinner hidden"></div>
+                        </button></a>
+
+
+                </div>
+
+
+
+                <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,834 @@
+{
+  "Academic_Entrance_Exams": {
+    "Undergraduate_Level": [
+      {
+        "name": "SAT",
+        "description": "Scholastic Aptitude Test",
+        "region": "USA",
+        "subjects": [
+          "Math",
+          "Evidence-Based Reading",
+          "Writing"
+        ],
+        "difficulty": "High"
+      },
+      {
+        "name": "ACT",
+        "description": "American College Testing",
+        "region": "USA",
+        "subjects": [
+          "English",
+          "Math",
+          "Reading",
+          "Science"
+        ],
+        "difficulty": "High"
+      },
+      {
+        "name": "Gaokao",
+        "description": "National Higher Education Entrance Exam",
+        "region": "China",
+        "subjects": [
+          "Math",
+          "Chinese",
+          "English",
+          "Sciences/Humanities"
+        ],
+        "difficulty": "Extreme"
+      },
+      {
+        "name": "JEE Main",
+        "description": "Joint Entrance Examination Main",
+        "region": "India",
+        "subjects": [
+          "Physics",
+          "Chemistry",
+          "Mathematics"
+        ],
+        "difficulty": "Very High"
+      },
+      {
+        "name": "JEE Advanced",
+        "description": "Joint Entrance Examination Advanced",
+        "region": "India",
+        "subjects": [
+          "Physics",
+          "Chemistry",
+          "Mathematics"
+        ],
+        "difficulty": "Extreme"
+      },
+      {
+        "name": "NEET UG",
+        "description": "National Eligibility cum Entrance Test",
+        "region": "India",
+        "subjects": [
+          "Physics",
+          "Chemistry",
+          "Biology"
+        ],
+        "difficulty": "Very High"
+      },
+      {
+        "name": "A-Levels",
+        "description": "Advanced Level Qualifications",
+        "region": "UK/International",
+        "subjects": [
+          "Various subjects"
+        ],
+        "difficulty": "High"
+      },
+      {
+        "name": "IB Diploma",
+        "description": "International Baccalaureate Diploma",
+        "region": "International",
+        "subjects": [
+          "6 subject groups + Extended Essay"
+        ],
+        "difficulty": "High"
+      },
+      {
+        "name": "CUET",
+        "description": "Common University Entrance Test",
+        "region": "India",
+        "subjects": [
+          "Languages",
+          "Domain Subjects",
+          "General Test"
+        ],
+        "difficulty": "High"
+      },
+      {
+        "name": "BITSAT",
+        "description": "Birla Institute of Technology and Science Admission Test",
+        "region": "India",
+        "subjects": [
+          "Physics",
+          "Chemistry",
+          "Math/Biology",
+          "English"
+        ],
+        "difficulty": "High"
+      },
+      {
+        "name": "KVPY",
+        "description": "Kishore Vaigyanik Protsahan Yojana",
+        "region": "India",
+        "subjects": [
+          "Math",
+          "Physics",
+          "Chemistry",
+          "Biology"
+        ],
+        "difficulty": "Very High"
+      },
+      {
+        "name": "AIIMS",
+        "description": "All India Institute of Medical Sciences Entrance",
+        "region": "India",
+        "subjects": [
+          "Physics",
+          "Chemistry",
+          "Biology",
+          "General Knowledge"
+        ],
+        "difficulty": "Very High"
+      },
+      {
+        "name": "VITEEE",
+        "description": "Vellore Institute of Technology Engineering Entrance Exam",
+        "region": "India",
+        "subjects": [
+          "Physics",
+          "Chemistry",
+          "Math",
+          "English"
+        ],
+        "difficulty": "High"
+      },
+      {
+        "name": "SRMJEEE",
+        "description": "SRM Joint Engineering Entrance Examination",
+        "region": "India",
+        "subjects": [
+          "Physics",
+          "Chemistry",
+          "Math"
+        ],
+        "difficulty": "High"
+      },
+      {
+        "name": "MET",
+        "description": "Manipal Entrance Test",
+        "region": "India",
+        "subjects": [
+          "Physics",
+          "Chemistry",
+          "Math"
+        ],
+        "difficulty": "High"
+      },
+      {
+        "name": "COMEDK",
+        "description": "Consortium of Medical, Engineering and Dental Colleges of Karnataka",
+        "region": "India",
+        "subjects": [
+          "Physics",
+          "Chemistry",
+          "Math"
+        ],
+        "difficulty": "High"
+      }
+    ],
+    "Graduate_Level": [
+      {
+        "name": "GRE",
+        "description": "Graduate Record Examination",
+        "region": "Global",
+        "subjects": [
+          "Verbal Reasoning",
+          "Quantitative Reasoning",
+          "Analytical Writing"
+        ],
+        "difficulty": "High"
+      },
+      {
+        "name": "GMAT",
+        "description": "Graduate Management Admission Test",
+        "region": "Global",
+        "subjects": [
+          "Quantitative",
+          "Verbal",
+          "Integrated Reasoning",
+          "Analytical Writing"
+        ],
+        "difficulty": "Very High"
+      },
+      {
+        "name": "LSAT",
+        "description": "Law School Admission Test",
+        "region": "USA/Canada",
+        "subjects": [
+          "Logical Reasoning",
+          "Analytical Reasoning",
+          "Reading Comprehension"
+        ],
+        "difficulty": "Very High"
+      },
+      {
+        "name": "MCAT",
+        "description": "Medical College Admission Test",
+        "region": "USA/Canada",
+        "subjects": [
+          "Biological Sciences",
+          "Physical Sciences",
+          "Psychology",
+          "Critical Analysis"
+        ],
+        "difficulty": "Very High"
+      },
+      {
+        "name": "GATE",
+        "description": "Graduate Aptitude Test in Engineering",
+        "region": "India",
+        "subjects": [
+          "Engineering subjects"
+        ],
+        "difficulty": "Very High"
+      },
+      {
+        "name": "CAT",
+        "description": "Common Admission Test",
+        "region": "India",
+        "subjects": [
+          "Verbal Ability",
+          "Data Interpretation",
+          "Quantitative Ability"
+        ],
+        "difficulty": "Very High"
+      },
+      {
+        "name": "XAT",
+        "description": "Xavier Aptitude Test",
+        "region": "India",
+        "subjects": [
+          "Verbal Ability",
+          "Data Interpretation",
+          "Quantitative Ability",
+          "General Knowledge"
+        ],
+        "difficulty": "Very High"
+      },
+      {
+        "name": "CLAT",
+        "description": "Common Law Admission Test",
+        "region": "India",
+        "subjects": [
+          "English",
+          "General Knowledge",
+          "Legal Reasoning",
+          "Logical Reasoning",
+          "Mathematics"
+        ],
+        "difficulty": "High"
+      },
+      {
+        "name": "SNAP",
+        "description": "Symbiosis National Aptitude Test",
+        "region": "India",
+        "subjects": [
+          "General English",
+          "Quantitative Aptitude",
+          "General Awareness",
+          "Analytical & Logical Reasoning"
+        ],
+        "difficulty": "High"
+      },
+      {
+        "name": "IIFT",
+        "description": "Indian Institute of Foreign Trade Entrance Exam",
+        "region": "India",
+        "subjects": [
+          "Quantitative Ability",
+          "Reading Comprehension",
+          "Data Interpretation",
+          "General Awareness"
+        ],
+        "difficulty": "High"
+      },
+      {
+        "name": "NMAT",
+        "description": "NMIMS Management Aptitude Test",
+        "region": "India",
+        "subjects": [
+          "Language Skills",
+          "Quantitative Skills",
+          "Logical Reasoning"
+        ],
+        "difficulty": "High"
+      },
+      {
+        "name": "MAT",
+        "description": "Management Aptitude Test",
+        "region": "India",
+        "subjects": [
+          "Language Comprehension",
+          "Mathematical Skills",
+          "Data Analysis",
+          "Intelligence & Critical Reasoning"
+        ],
+        "difficulty": "Moderate"
+      },
+      {
+        "name": "CMAT",
+        "description": "Common Management Admission Test",
+        "region": "India",
+        "subjects": [
+          "Quantitative Techniques",
+          "Logical Reasoning",
+          "Language Comprehension",
+          "General Awareness"
+        ],
+        "difficulty": "High"
+      },
+      {
+        "name": "ATMA",
+        "description": "AIMS Test for Management Admissions",
+        "region": "India",
+        "subjects": [
+          "Analytical Reasoning",
+          "Quantitative Aptitude",
+          "Verbal Skills"
+        ],
+        "difficulty": "Moderate"
+      }
+    ]
+  },
+  "English_Proficiency_Tests": [
+    {
+      "name": "IELTS",
+      "description": "International English Language Testing System",
+      "region": "Global",
+      "skills": [
+        "Listening",
+        "Reading",
+        "Writing",
+        "Speaking"
+      ],
+      "difficulty": "Moderate"
+    },
+    {
+      "name": "TOEFL",
+      "description": "Test of English as a Foreign Language",
+      "region": "Global",
+      "skills": [
+        "Reading",
+        "Listening",
+        "Speaking",
+        "Writing"
+      ],
+      "difficulty": "Moderate"
+    },
+    {
+      "name": "PTE",
+      "description": "Pearson Test of English",
+      "region": "Global",
+      "skills": [
+        "Speaking",
+        "Writing",
+        "Reading",
+        "Listening"
+      ],
+      "difficulty": "Moderate"
+    },
+    {
+      "name": "Duolingo English Test",
+      "description": "DET",
+      "region": "Global",
+      "skills": [
+        "Literacy",
+        "Conversation",
+        "Comprehension",
+        "Production"
+      ],
+      "difficulty": "Moderate"
+    },
+    {
+      "name": "Cambridge English Exams",
+      "description": "Various levels (FCE, CAE, CPE)",
+      "region": "Global",
+      "skills": [
+        "Reading",
+        "Writing",
+        "Listening",
+        "Speaking",
+        "Use of English"
+      ],
+      "difficulty": "High"
+    },
+    {
+      "name": "OET",
+      "description": "Occupational English Test",
+      "region": "Healthcare professionals",
+      "skills": [
+        "Listening",
+        "Reading",
+        "Writing",
+        "Speaking"
+      ],
+      "difficulty": "High"
+    }
+  ],
+  "Professional_Certification_Exams": {
+    "Finance_Banking": [
+      {
+        "name": "CFA",
+        "description": "Chartered Financial Analyst",
+        "region": "Global",
+        "levels": 3,
+        "focus": "Investment Analysis & Portfolio Management",
+        "difficulty": "Extreme"
+      },
+      {
+        "name": "FRM",
+        "description": "Financial Risk Manager",
+        "region": "Global",
+        "levels": 2,
+        "focus": "Risk Management",
+        "difficulty": "Very High"
+      },
+      {
+        "name": "CPA",
+        "description": "Certified Public Accountant",
+        "region": "USA/Global",
+        "parts": 4,
+        "focus": "Accounting & Auditing",
+        "difficulty": "Very High"
+      },
+      {
+        "name": "ACCA",
+        "description": "Association of Chartered Certified Accountants",
+        "region": "Global",
+        "papers": 13,
+        "focus": "Professional Accounting",
+        "difficulty": "Very High"
+      },
+      {
+        "name": "CA",
+        "description": "Chartered Accountant",
+        "region": "Various countries",
+        "levels": 3,
+        "focus": "Accounting & Finance",
+        "difficulty": "Extreme"
+      },
+      {
+        "name": "CFP",
+        "description": "Certified Financial Planner",
+        "region": "Global",
+        "focus": "Financial Planning",
+        "difficulty": "High"
+      },
+      {
+        "name": "CMA",
+        "description": "Certified Management Accountant",
+        "region": "Global",
+        "parts": 2,
+        "focus": "Management Accounting",
+        "difficulty": "High"
+      },
+      {
+        "name": "CAIA",
+        "description": "Chartered Alternative Investment Analyst",
+        "region": "Global",
+        "levels": 2,
+        "focus": "Alternative Investments",
+        "difficulty": "Very High"
+      },
+      {
+        "name": "CIA",
+        "description": "Certified Internal Auditor",
+        "region": "Global",
+        "parts": 3,
+        "focus": "Internal Auditing",
+        "difficulty": "High"
+      }
+    ],
+    "IT_Technology": [
+      {
+        "name": "CCIE",
+        "description": "Cisco Certified Internetwork Expert",
+        "region": "Global",
+        "focus": "Networking",
+        "difficulty": "Extreme"
+      },
+      {
+        "name": "CISSP",
+        "description": "Certified Information Systems Security Professional",
+        "region": "Global",
+        "focus": "Information Security",
+        "difficulty": "Very High"
+      },
+      {
+        "name": "PMP",
+        "description": "Project Management Professional",
+        "region": "Global",
+        "focus": "Project Management",
+        "difficulty": "High"
+      },
+      {
+        "name": "AWS Certified Solutions Architect",
+        "description": "Amazon Web Services Certification",
+        "region": "Global",
+        "focus": "Cloud Architecture",
+        "difficulty": "High"
+      },
+      {
+        "name": "CISSP",
+        "description": "Certified Information Systems Security Professional",
+        "region": "Global",
+        "focus": "Cybersecurity",
+        "difficulty": "Very High"
+      },
+      {
+        "name": "CISM",
+        "description": "Certified Information Security Manager",
+        "region": "Global",
+        "focus": "Information Security Management",
+        "difficulty": "High"
+      },
+      {
+        "name": "CEH",
+        "description": "Certified Ethical Hacker",
+        "region": "Global",
+        "focus": "Ethical Hacking",
+        "difficulty": "High"
+      },
+      {
+        "name": "CCNA",
+        "description": "Cisco Certified Network Associate",
+        "region": "Global",
+        "focus": "Networking",
+        "difficulty": "Moderate"
+      },
+      {
+        "name": "CompTIA Security+",
+        "description": "Computing Technology Industry Association Security Certification",
+        "region": "Global",
+        "focus": "IT Security",
+        "difficulty": "Moderate"
+      }
+    ],
+    "Medical_Healthcare": [
+      {
+        "name": "USMLE",
+        "description": "United States Medical Licensing Examination",
+        "region": "USA",
+        "steps": 3,
+        "focus": "Medical Practice",
+        "difficulty": "Extreme"
+      },
+      {
+        "name": "PLAB",
+        "description": "Professional and Linguistic Assessments Board",
+        "region": "UK",
+        "parts": 2,
+        "focus": "Medical Practice",
+        "difficulty": "Very High"
+      },
+      {
+        "name": "NEET PG",
+        "description": "National Eligibility cum Entrance Test Postgraduate",
+        "region": "India",
+        "focus": "Medical Specialization",
+        "difficulty": "Very High"
+      },
+      {
+        "name": "FMGE",
+        "description": "Foreign Medical Graduate Examination",
+        "region": "India",
+        "focus": "Medical Practice",
+        "difficulty": "Very High"
+      },
+      {
+        "name": "AMC CAT",
+        "description": "Australian Medical Council Clinical Assessment Test",
+        "region": "Australia",
+        "focus": "Medical Practice",
+        "difficulty": "Very High"
+      },
+      {
+        "name": "NCLEX",
+        "description": "National Council Licensure Examination",
+        "region": "USA/Canada",
+        "focus": "Nursing",
+        "difficulty": "High"
+      }
+    ],
+    "Legal": [
+      {
+        "name": "Bar Exam",
+        "description": "Various Bar Examinations",
+        "region": "Various",
+        "focus": "Legal Practice",
+        "difficulty": "Very High"
+      },
+      {
+        "name": "California Bar Exam",
+        "description": "California State Bar Examination",
+        "region": "California, USA",
+        "focus": "Legal Practice",
+        "difficulty": "Extreme"
+      },
+      {
+        "name": "New York Bar Exam",
+        "description": "New York State Bar Examination",
+        "region": "New York, USA",
+        "focus": "Legal Practice",
+        "difficulty": "Very High"
+      },
+      {
+        "name": "QLTS",
+        "description": "Qualified Lawyers Transfer Scheme",
+        "region": "UK",
+        "focus": "Legal Practice",
+        "difficulty": "High"
+      }
+    ]
+  },
+  "Civil_Services_Exams": [
+    {
+      "name": "UPSC CSE",
+      "description": "Union Public Service Commission Civil Services Examination",
+      "region": "India",
+      "stages": 3,
+      "difficulty": "Extreme"
+    },
+    {
+      "name": "CSS",
+      "description": "Central Superior Services",
+      "region": "Pakistan",
+      "stages": 3,
+      "difficulty": "Very High"
+    },
+    {
+      "name": "SSC CGL",
+      "description": "Staff Selection Commission Combined Graduate Level",
+      "region": "India",
+      "tiers": 4,
+      "difficulty": "High"
+    },
+    {
+      "name": "SSC CHSL",
+      "description": "Staff Selection Commission Combined Higher Secondary Level",
+      "region": "India",
+      "tiers": 3,
+      "difficulty": "Moderate"
+    },
+    {
+      "name": "IBPS PO",
+      "description": "Institute of Banking Personnel Selection Probationary Officer",
+      "region": "India",
+      "phases": 3,
+      "difficulty": "High"
+    },
+    {
+      "name": "SBI PO",
+      "description": "State Bank of India Probationary Officer",
+      "region": "India",
+      "phases": 3,
+      "difficulty": "High"
+    },
+    {
+      "name": "RRB NTPC",
+      "description": "Railway Recruitment Board Non-Technical Popular Categories",
+      "region": "India",
+      "stages": 2,
+      "difficulty": "High"
+    },
+    {
+      "name": "NDA",
+      "description": "National Defence Academy",
+      "region": "India",
+      "stages": 2,
+      "difficulty": "High"
+    },
+    {
+      "name": "CDS",
+      "description": "Combined Defence Services",
+      "region": "India",
+      "stages": 2,
+      "difficulty": "High"
+    }
+  ],
+  "Specialized_Tests": [
+    {
+      "name": "Mensa IQ Test",
+      "description": "High IQ Society Membership Test",
+      "region": "Global",
+      "focus": "Intelligence Quotient",
+      "difficulty": "Extreme"
+    },
+    {
+      "name": "Master Sommelier Diploma",
+      "description": "Wine Industry Certification",
+      "region": "Global",
+      "focus": "Wine Expertise",
+      "difficulty": "Extreme"
+    },
+    {
+      "name": "All Souls Prize Fellowship",
+      "description": "Oxford University Fellowship",
+      "region": "UK",
+      "focus": "Academic Excellence",
+      "difficulty": "Extreme"
+    },
+    {
+      "name": "Rhodes Scholarship",
+      "description": "International postgraduate award",
+      "region": "Global",
+      "focus": "Leadership & Academics",
+      "difficulty": "Extreme"
+    },
+    {
+      "name": "Fulbright Scholarship",
+      "description": "Educational exchange program",
+      "region": "Global",
+      "focus": "Academic Excellence",
+      "difficulty": "Very High"
+    }
+  ],
+  "Country_Specific_Exams": {
+    "Japan": [
+      {
+        "name": "University Entrance Exams",
+        "description": "Various Japanese university entrance tests",
+        "difficulty": "Very High"
+      },
+      {
+        "name": "Todai Entrance Exam",
+        "description": "University of Tokyo entrance examination",
+        "difficulty": "Extreme"
+      }
+    ],
+    "South_Korea": [
+      {
+        "name": "Suneung",
+        "description": "College Scholastic Ability Test",
+        "difficulty": "Very High"
+      }
+    ],
+    "Germany": [
+      {
+        "name": "Abitur",
+        "description": "German university entrance qualification",
+        "difficulty": "High"
+      },
+      {
+        "name": "TestAS",
+        "description": "Test for Academic Studies",
+        "difficulty": "High"
+      }
+    ],
+    "France": [
+      {
+        "name": "Baccalaur\u00e9at",
+        "description": "French national academic qualification",
+        "difficulty": "High"
+      },
+      {
+        "name": "Grande \u00c9cole Entrance Exams",
+        "description": "Competitive entrance exams for elite French schools",
+        "difficulty": "Very High"
+      }
+    ],
+    "Canada": [
+      {
+        "name": "OSSLT",
+        "description": "Ontario Secondary School Literacy Test",
+        "difficulty": "Moderate"
+      }
+    ],
+    "Australia": [
+      {
+        "name": "ATAR",
+        "description": "Australian Tertiary Admission Rank",
+        "difficulty": "High"
+      },
+      {
+        "name": "UCAT",
+        "description": "University Clinical Aptitude Test",
+        "difficulty": "High"
+      }
+    ]
+  },
+  "Teaching_Education_Exams": [
+    {
+      "name": "CTET",
+      "description": "Central Teacher Eligibility Test",
+      "region": "India",
+      "levels": 2,
+      "difficulty": "Moderate"
+    },
+    {
+      "name": "UGC NET",
+      "description": "University Grants Commission National Eligibility Test",
+      "region": "India",
+      "subjects": "Multiple",
+      "difficulty": "High"
+    },
+    {
+      "name": "CSIR NET",
+      "description": "Council of Scientific and Industrial Research National Eligibility Test",
+      "region": "India",
+      "subjects": "Science",
+      "difficulty": "High"
+    },
+    {
+      "name": "Praxis",
+      "description": "Educational Testing Service teacher certification exams",
+      "region": "USA",
+      "subjects": "Multiple",
+      "difficulty": "Moderate"
+    }
+  ]
+}

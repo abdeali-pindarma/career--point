@@ -1,0 +1,4369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Competitive Exam Roadmaps - 50+ Exam Preparation Guide</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Design System CSS */
+        :root {
+            /* Primitive Color Tokens */
+            --color-white: rgba(255, 255, 255, 1);
+            --color-black: rgba(0, 0, 0, 1);
+            --color-cream-50: rgba(252, 252, 249, 1);
+            --color-cream-100: rgba(255, 255, 253, 1);
+            --color-gray-200: rgba(245, 245, 245, 1);
+            --color-gray-300: rgba(167, 169, 169, 1);
+            --color-gray-400: rgba(119, 124, 124, 1);
+            --color-slate-500: rgba(98, 108, 113, 1);
+            --color-brown-600: rgba(94, 82, 64, 1);
+            --color-charcoal-700: rgba(31, 33, 33, 1);
+            --color-charcoal-800: rgba(38, 40, 40, 1);
+            --color-slate-900: rgba(19, 52, 59, 1);
+            --color-teal-300: rgba(50, 184, 198, 1);
+            --color-teal-400: rgba(45, 166, 178, 1);
+            --color-teal-500: rgba(33, 128, 141, 1);
+            --color-teal-600: rgba(29, 116, 128, 1);
+            --color-teal-700: rgba(26, 104, 115, 1);
+            --color-teal-800: rgba(41, 150, 161, 1);
+            --color-red-400: rgba(255, 84, 89, 1);
+            --color-red-500: rgba(192, 21, 47, 1);
+            --color-orange-400: rgba(230, 129, 97, 1);
+            --color-orange-500: rgba(168, 75, 47, 1);
+
+            /* RGB versions for opacity control */
+            --color-brown-600-rgb: 94, 82, 64;
+            --color-teal-500-rgb: 33, 128, 141;
+            --color-slate-900-rgb: 19, 52, 59;
+            --color-slate-500-rgb: 98, 108, 113;
+            --color-red-500-rgb: 192, 21, 47;
+            --color-red-400-rgb: 255, 84, 89;
+            --color-orange-500-rgb: 168, 75, 47;
+            --color-orange-400-rgb: 230, 129, 97;
+
+            /* Background color tokens (Light Mode) */
+            --color-bg-1: rgba(59, 130, 246, 0.08);
+            --color-bg-2: rgba(245, 158, 11, 0.08);
+            --color-bg-3: rgba(34, 197, 94, 0.08);
+            --color-bg-4: rgba(239, 68, 68, 0.08);
+            --color-bg-5: rgba(147, 51, 234, 0.08);
+            --color-bg-6: rgba(249, 115, 22, 0.08);
+            --color-bg-7: rgba(236, 72, 153, 0.08);
+            --color-bg-8: rgba(6, 182, 212, 0.08);
+
+            /* Semantic Color Tokens (Light Mode) */
+            --color-background: var(--color-cream-50);
+            --color-surface: var(--color-cream-100);
+            --color-text: var(--color-slate-900);
+            --color-text-secondary: var(--color-slate-500);
+            --color-primary: var(--color-teal-500);
+            --color-primary-hover: var(--color-teal-600);
+            --color-primary-active: var(--color-teal-700);
+            --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+            --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+            --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+            --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+            --color-btn-primary-text: var(--color-cream-50);
+            --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+            --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+            --color-error: var(--color-red-500);
+            --color-success: var(--color-teal-500);
+            --color-warning: var(--color-orange-500);
+            --color-info: var(--color-slate-500);
+            --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+            --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+
+            /* Typography */
+            --font-family-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            --font-family-mono: "Courier New", monospace;
+            --font-size-xs: 11px;
+            --font-size-sm: 12px;
+            --font-size-base: 14px;
+            --font-size-md: 14px;
+            --font-size-lg: 16px;
+            --font-size-xl: 18px;
+            --font-size-2xl: 20px;
+            --font-size-3xl: 24px;
+            --font-size-4xl: 30px;
+            --font-weight-normal: 400;
+            --font-weight-medium: 500;
+            --font-weight-semibold: 550;
+            --font-weight-bold: 600;
+            --line-height-tight: 1.2;
+            --line-height-normal: 1.5;
+            --letter-spacing-tight: -0.01em;
+
+            /* Spacing */
+            --space-0: 0;
+            --space-1: 1px;
+            --space-2: 2px;
+            --space-4: 4px;
+            --space-6: 6px;
+            --space-8: 8px;
+            --space-10: 10px;
+            --space-12: 12px;
+            --space-16: 16px;
+            --space-20: 20px;
+            --space-24: 24px;
+            --space-32: 32px;
+
+            /* Border Radius */
+            --radius-sm: 6px;
+            --radius-base: 8px;
+            --radius-md: 10px;
+            --radius-lg: 12px;
+            --radius-full: 9999px;
+
+            /* Shadows */
+            --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+            --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+
+            /* Animation */
+            --duration-fast: 150ms;
+            --duration-normal: 250ms;
+            --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+
+            /* Layout */
+            --container-sm: 640px;
+            --container-md: 768px;
+            --container-lg: 1024px;
+            --container-xl: 1280px;
+        }
+
+        /* Dark mode colors */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-gray-400-rgb: 119, 124, 124;
+                --color-teal-300-rgb: 50, 184, 198;
+                --color-gray-300-rgb: 167, 169, 169;
+                --color-gray-200-rgb: 245, 245, 245;
+                --color-bg-1: rgba(29, 78, 216, 0.15);
+                --color-bg-2: rgba(180, 83, 9, 0.15);
+                --color-bg-3: rgba(21, 128, 61, 0.15);
+                --color-bg-4: rgba(185, 28, 28, 0.15);
+                --color-bg-5: rgba(107, 33, 168, 0.15);
+                --color-bg-6: rgba(194, 65, 12, 0.15);
+                --color-bg-7: rgba(190, 24, 93, 0.15);
+                --color-bg-8: rgba(8, 145, 178, 0.15);
+                --color-background: var(--color-charcoal-700);
+                --color-surface: var(--color-charcoal-800);
+                --color-text: var(--color-gray-200);
+                --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+                --color-primary: var(--color-teal-300);
+                --color-primary-hover: var(--color-teal-400);
+                --color-primary-active: var(--color-teal-800);
+                --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+                --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+                --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+                --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+                --color-error: var(--color-red-400);
+                --color-success: var(--color-teal-300);
+                --color-warning: var(--color-orange-400);
+                --color-info: var(--color-gray-300);
+                --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+                --color-btn-primary-text: var(--color-slate-900);
+                --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+                --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+                --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+                --color-select-caret: rgba(var(--color-gray-200-rgb), 0.8);
+            }
+        }
+
+        [data-theme="dark"] {
+            --color-gray-400-rgb: 119, 124, 124;
+            --color-teal-300-rgb: 50, 184, 198;
+            --color-gray-300-rgb: 167, 169, 169;
+            --color-gray-200-rgb: 245, 245, 245;
+            --color-bg-1: rgba(29, 78, 216, 0.15);
+            --color-bg-2: rgba(180, 83, 9, 0.15);
+            --color-bg-3: rgba(21, 128, 61, 0.15);
+            --color-bg-4: rgba(185, 28, 28, 0.15);
+            --color-bg-5: rgba(107, 33, 168, 0.15);
+            --color-bg-6: rgba(194, 65, 12, 0.15);
+            --color-bg-7: rgba(190, 24, 93, 0.15);
+            --color-bg-8: rgba(8, 145, 178, 0.15);
+            --color-background: var(--color-charcoal-700);
+            --color-surface: var(--color-charcoal-800);
+            --color-text: var(--color-gray-200);
+            --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+            --color-primary: var(--color-teal-300);
+            --color-primary-hover: var(--color-teal-400);
+            --color-primary-active: var(--color-teal-800);
+            --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+            --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+            --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+            --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+            --color-error: var(--color-red-400);
+            --color-success: var(--color-teal-300);
+            --color-warning: var(--color-orange-400);
+            --color-info: var(--color-gray-300);
+            --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+            --color-btn-primary-text: var(--color-slate-900);
+            --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+            --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+            --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+            --color-select-caret: rgba(var(--color-gray-200-rgb), 0.8);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family-base);
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: var(--line-height-normal);
+            transition: all var(--duration-normal) ease;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-teal-700) 100%);
+            color: var(--color-white);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><defs><radialGradient id="a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="%23fff" stop-opacity=".1"/><stop offset="100%" stop-color="%23fff" stop-opacity="0"/></radialGradient></defs><rect width="100" height="20" fill="url(%23a)"/></svg>');
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: var(--font-weight-bold);
+            margin-bottom: var(--space-16);
+            animation: slideUp 1s ease-out;
+        }
+
+        .hero p {
+            font-size: var(--font-size-xl);
+            opacity: 0.9;
+            margin-bottom: var(--space-32);
+            animation: slideUp 1s ease-out 0.2s both;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Search and Filters */
+        .search-section {
+            background: var(--color-surface);
+            padding: var(--space-32) var(--space-20);
+            box-shadow: var(--shadow-md);
+            border-top: 4px solid var(--color-primary);
+        }
+
+        .search-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-24);
+        }
+
+        .search-bar {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: var(--space-16) var(--space-20) var(--space-16) 50px;
+            border: 2px solid var(--color-border);
+            border-radius: var(--radius-full);
+            font-size: var(--font-size-lg);
+            background: var(--color-background);
+            color: var(--color-text);
+            transition: all var(--duration-normal) ease;
+        }
+
+        .search-bar input:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px var(--color-focus-ring);
+        }
+
+        .search-bar i {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--color-text-secondary);
+            font-size: var(--font-size-lg);
+        }
+
+        .filter-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-12);
+            justify-content: center;
+        }
+
+        .filter-tag {
+            padding: var(--space-8) var(--space-16);
+            background: var(--color-secondary);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-full);
+            cursor: pointer;
+            transition: all var(--duration-normal) ease;
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-medium);
+        }
+
+        .filter-tag:hover {
+            background: var(--color-primary);
+            color: var(--color-btn-primary-text);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .filter-tag.active {
+            background: var(--color-primary);
+            color: var(--color-btn-primary-text);
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-full);
+            padding: var(--space-12);
+            cursor: pointer;
+            transition: all var(--duration-normal) ease;
+            box-shadow: var(--shadow-md);
+        }
+
+        .theme-toggle:hover {
+            background: var(--color-secondary);
+            transform: rotate(180deg);
+        }
+
+        /* Category Grid */
+        .categories {
+            padding: var(--space-32) var(--space-20);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: var(--font-size-3xl);
+            font-weight: var(--font-weight-bold);
+            margin-bottom: var(--space-32);
+            color: var(--color-text);
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-24);
+            margin-bottom: var(--space-32);
+        }
+
+        .category-card {
+            background: var(--color-surface);
+            border: 1px solid var(--color-card-border);
+            border-radius: var(--radius-lg);
+            padding: var(--space-24);
+            transition: all var(--duration-normal) ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .category-card:hover::before {
+            left: 100%;
+        }
+
+        .category-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--color-primary);
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--space-16);
+        }
+
+        .category-icon {
+            font-size: 2.5rem;
+            margin-right: var(--space-16);
+        }
+
+        .category-card h3 {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--space-8);
+        }
+
+        .category-description {
+            color: var(--color-text-secondary);
+            margin-bottom: var(--space-16);
+            font-size: var(--font-size-sm);
+        }
+
+        .exam-count {
+            display: inline-block;
+            background: var(--color-primary);
+            color: var(--color-btn-primary-text);
+            padding: var(--space-4) var(--space-12);
+            border-radius: var(--radius-full);
+            font-size: var(--font-size-xs);
+            font-weight: var(--font-weight-medium);
+        }
+
+        /* Exam Details Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2000;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-20);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background: var(--color-surface);
+            border-radius: var(--radius-lg);
+            max-width: 900px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9) translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .modal-header {
+            padding: var(--space-24);
+            border-bottom: 1px solid var(--color-card-border-inner);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .modal-header h2 {
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-bold);
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: var(--font-size-2xl);
+            cursor: pointer;
+            color: var(--color-text-secondary);
+            padding: var(--space-8);
+            border-radius: var(--radius-sm);
+            transition: all var(--duration-normal) ease;
+        }
+
+        .close-btn:hover {
+            background: var(--color-secondary);
+            color: var(--color-text);
+        }
+
+        .modal-body {
+            padding: var(--space-24);
+        }
+
+        .exam-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-16);
+            margin-bottom: var(--space-24);
+        }
+
+        .info-item {
+            background: var(--color-bg-1);
+            padding: var(--space-16);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-card-border);
+        }
+
+        .info-label {
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-text-secondary);
+            font-size: var(--font-size-sm);
+            margin-bottom: var(--space-4);
+        }
+
+        .info-value {
+            font-weight: var(--font-weight-medium);
+        }
+
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid var(--color-card-border);
+            margin-bottom: var(--space-24);
+        }
+
+        .tab {
+            padding: var(--space-12) var(--space-20);
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: var(--font-size-md);
+            font-weight: var(--font-weight-medium);
+            color: var(--color-text-secondary);
+            transition: all var(--duration-normal) ease;
+            border-bottom: 2px solid transparent;
+        }
+
+        .tab:hover {
+            color: var(--color-primary);
+        }
+
+        .tab.active {
+            color: var(--color-primary);
+            border-bottom-color: var(--color-primary);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeInUp 0.3s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .roadmap-phase {
+            background: var(--color-bg-2);
+            border: 1px solid var(--color-card-border);
+            border-radius: var(--radius-md);
+            padding: var(--space-20);
+            margin-bottom: var(--space-16);
+        }
+
+        .phase-title {
+            font-weight: var(--font-weight-semibold);
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--space-12);
+            display: flex;
+            align-items: center;
+        }
+
+        .phase-number {
+            background: var(--color-primary);
+            color: var(--color-btn-primary-text);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: var(--space-12);
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-bold);
+        }
+
+        .tips-list {
+            list-style: none;
+        }
+
+        .tips-list li {
+            padding: var(--space-8) 0;
+            padding-left: var(--space-24);
+            position: relative;
+            border-bottom: 1px solid var(--color-card-border-inner);
+        }
+
+        .tips-list li:last-child {
+            border-bottom: none;
+        }
+
+        .tips-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--color-success);
+            font-weight: bold;
+        }
+
+        .bookmark-btn {
+            position: absolute;
+            top: var(--space-16);
+            right: var(--space-16);
+            background: none;
+            border: none;
+            font-size: var(--font-size-xl);
+            cursor: pointer;
+            color: var(--color-text-secondary);
+            transition: all var(--duration-normal) ease;
+        }
+
+        .bookmark-btn:hover {
+            color: var(--color-warning);
+            transform: scale(1.1);
+        }
+
+        .bookmark-btn.bookmarked {
+            color: var(--color-warning);
+        }
+
+        /* Progress Tracking */
+        .progress-section {
+            background: var(--color-bg-3);
+            border: 1px solid var(--color-card-border);
+            border-radius: var(--radius-md);
+            padding: var(--space-20);
+            margin-bottom: var(--space-24);
+        }
+
+        .progress-title {
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--space-16);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .progress-bar {
+            background: var(--color-secondary);
+            height: 8px;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            margin-bottom: var(--space-12);
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--color-success);
+            transition: width var(--duration-normal) ease;
+        }
+
+        .progress-actions {
+            display: flex;
+            gap: var(--space-12);
+        }
+
+        .btn {
+            padding: var(--space-8) var(--space-16);
+            background: var(--color-primary);
+            color: var(--color-btn-primary-text);
+            border: none;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-medium);
+            transition: all var(--duration-normal) ease;
+        }
+
+        .btn:hover {
+            background: var(--color-primary-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: var(--color-secondary);
+            color: var(--color-text);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-secondary-hover);
+        }
+
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--color-primary);
+            color: var(--color-btn-primary-text);
+            border: none;
+            border-radius: 50%;
+            font-size: var(--font-size-xl);
+            cursor: pointer;
+            box-shadow: var(--shadow-lg);
+            transition: all var(--duration-normal) ease;
+            z-index: 1000;
+        }
+
+        .fab:hover {
+            background: var(--color-primary-hover);
+            transform: scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .search-container {
+                padding: 0 var(--space-16);
+            }
+
+            .category-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-content {
+                margin: var(--space-16);
+                max-height: calc(100vh - 32px);
+            }
+
+            .exam-info {
+                grid-template-columns: 1fr;
+            }
+
+            .tabs {
+                overflow-x: auto;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+
+            .tabs::-webkit-scrollbar {
+                display: none;
+            }
+
+            .filter-tags {
+                justify-content: flex-start;
+                overflow-x: auto;
+                scrollbar-width: none;
+            }
+
+            .filter-tags::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: var(--space-32);
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid var(--color-secondary);
+            border-top: 4px solid var(--color-primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Status Badges */
+        .difficulty-badge {
+            display: inline-block;
+            padding: var(--space-4) var(--space-8);
+            border-radius: var(--radius-sm);
+            font-size: var(--font-size-xs);
+            font-weight: var(--font-weight-medium);
+            text-transform: uppercase;
+        }
+
+        .difficulty-badge.high {
+            background: rgba(var(--color-red-500-rgb), 0.15);
+            color: var(--color-error);
+        }
+
+        .difficulty-badge.medium {
+            background: rgba(var(--color-orange-500-rgb), 0.15);
+            color: var(--color-warning);
+        }
+
+        .difficulty-badge.very-high {
+            background: rgba(var(--color-red-400-rgb), 0.15);
+            color: var(--color-red-400);
+        }
+
+        /* Advanced Features Styling */
+        .comparison-tool {
+            background: var(--color-bg-3);
+            border: 1px solid var(--color-card-border);
+            border-radius: var(--radius-lg);
+            padding: var(--space-24);
+            margin-bottom: var(--space-24);
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-16);
+            margin-top: var(--space-16);
+        }
+
+        .compare-card {
+            background: var(--color-surface);
+            border: 2px solid var(--color-card-border);
+            border-radius: var(--radius-md);
+            padding: var(--space-16);
+            position: relative;
+            transition: all var(--duration-normal) ease;
+        }
+
+        .compare-card.selected {
+            border-color: var(--color-primary);
+            background: var(--color-bg-1);
+        }
+
+        .compare-remove {
+            position: absolute;
+            top: var(--space-8);
+            right: var(--space-8);
+            background: var(--color-error);
+            color: var(--color-white);
+            border: none;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            font-size: var(--font-size-xs);
+            cursor: pointer;
+            transition: all var(--duration-normal) ease;
+        }
+
+        .compare-remove:hover {
+            transform: scale(1.1);
+        }
+
+        .smart-recommendations {
+            background: linear-gradient(135deg, var(--color-bg-2), var(--color-bg-3));
+            border: 1px solid var(--color-card-border);
+            border-radius: var(--radius-lg);
+            padding: var(--space-24);
+            margin-bottom: var(--space-24);
+        }
+
+        .recommendation-card {
+            background: var(--color-surface);
+            border: 1px solid var(--color-card-border);
+            border-radius: var(--radius-md);
+            padding: var(--space-16);
+            margin-bottom: var(--space-16);
+            display: flex;
+            align-items: center;
+            gap: var(--space-16);
+            transition: all var(--duration-normal) ease;
+        }
+
+        .recommendation-card:hover {
+            transform: translateX(8px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .recommendation-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .analytics-dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-16);
+            margin-bottom: var(--space-24);
+        }
+
+        .analytics-card {
+            background: var(--color-surface);
+            border: 1px solid var(--color-card-border);
+            border-radius: var(--radius-lg);
+            padding: var(--space-20);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .analytics-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-teal-300));
+        }
+
+        .analytics-number {
+            font-size: var(--font-size-3xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-primary);
+            margin-bottom: var(--space-8);
+        }
+
+        .analytics-label {
+            color: var(--color-text-secondary);
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-medium);
+        }
+
+        .floating-tools {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-12);
+            z-index: 1000;
+        }
+
+        .tool-btn {
+            width: 50px;
+            height: 50px;
+            background: var(--color-surface);
+            border: 2px solid var(--color-primary);
+            border-radius: 50%;
+            color: var(--color-primary);
+            font-size: var(--font-size-lg);
+            cursor: pointer;
+            transition: all var(--duration-normal) ease;
+            box-shadow: var(--shadow-md);
+        }
+
+        .tool-btn:hover {
+            background: var(--color-primary);
+            color: var(--color-btn-primary-text);
+            transform: scale(1.1);
+        }
+
+        .advanced-search {
+            background: var(--color-surface);
+            border: 1px solid var(--color-card-border);
+            border-radius: var(--radius-lg);
+            padding: var(--space-24);
+            margin-bottom: var(--space-24);
+            display: none;
+        }
+
+        .advanced-search.active {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .search-filters {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-16);
+            margin-bottom: var(--space-20);
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-8);
+        }
+
+        .filter-label {
+            font-weight: var(--font-weight-medium);
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+        }
+
+        .filter-select {
+            padding: var(--space-8) var(--space-12);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            background: var(--color-background);
+            color: var(--color-text);
+            font-size: var(--font-size-sm);
+        }
+
+        .achievement-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-8);
+            background: linear-gradient(135deg, var(--color-success), var(--color-teal-300));
+            color: var(--color-white);
+            padding: var(--space-8) var(--space-16);
+            border-radius: var(--radius-full);
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-medium);
+            margin: var(--space-4);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .success-stories {
+            background: var(--color-bg-1);
+            border: 1px solid var(--color-card-border);
+            border-radius: var(--radius-lg);
+            padding: var(--space-24);
+            margin-bottom: var(--space-24);
+        }
+
+        .story-carousel {
+            display: flex;
+            gap: var(--space-16);
+            overflow-x: auto;
+            padding-bottom: var(--space-16);
+            scrollbar-width: thin;
+        }
+
+        .story-card {
+            min-width: 300px;
+            background: var(--color-surface);
+            border: 1px solid var(--color-card-border);
+            border-radius: var(--radius-md);
+            padding: var(--space-20);
+            position: relative;
+        }
+
+        .story-quote {
+            font-style: italic;
+            margin-bottom: var(--space-16);
+            position: relative;
+            padding-left: var(--space-24);
+        }
+
+        .story-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -10px;
+            font-size: 3rem;
+            color: var(--color-primary);
+            opacity: 0.3;
+        }
+
+        .story-author {
+            display: flex;
+            align-items: center;
+            gap: var(--space-12);
+            font-weight: var(--font-weight-medium);
+        }
+
+        .study-planner {
+            background: var(--color-surface);
+            border: 1px solid var(--color-card-border);
+            border-radius: var(--radius-lg);
+            padding: var(--space-24);
+            margin-bottom: var(--space-24);
+        }
+
+        .planner-calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: var(--space-4);
+            margin-top: var(--space-16);
+        }
+
+        .calendar-day {
+            aspect-ratio: 1;
+            background: var(--color-bg-1);
+            border: 1px solid var(--color-card-border);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-sm);
+            cursor: pointer;
+            transition: all var(--duration-normal) ease;
+        }
+
+        .calendar-day:hover {
+            background: var(--color-primary);
+            color: var(--color-btn-primary-text);
+        }
+
+        .calendar-day.has-study {
+            background: var(--color-success);
+            color: var(--color-white);
+        }
+
+        .calendar-day.today {
+            border: 2px solid var(--color-primary);
+            font-weight: var(--font-weight-bold);
+        }
+
+        /* Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--color-secondary);
+            border-radius: var(--radius-sm);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-primary);
+            border-radius: var(--radius-sm);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--color-primary-hover);
+        }
+    </style>
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>🚀 Ultimate Competitive Exam Roadmaps</h1>
+            <div style="font-size: 1.2rem; margin-bottom: 16px; opacity: 0.95;">India's Most Comprehensive Exam Preparation Platform</div>
+            <p>Your Journey to Success Starts Here - 75+ Comprehensive Exam Preparation Guides</p>
+            <div style="display: flex; justify-content: center; gap: 40px; margin-top: 32px; flex-wrap: wrap;">
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; font-weight: bold; color: var(--color-white);">75+</div>
+                    <div style="opacity: 0.9;">Exam Roadmaps</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; font-weight: bold; color: var(--color-white);">15+</div>
+                    <div style="opacity: 0.9;">Categories</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; font-weight: bold; color: var(--color-white);">1M+</div>
+                    <div style="opacity: 0.9;">Success Stories</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filters -->
+    <section class="search-section">
+        <div class="search-container">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="examSearch" placeholder="Search for any competitive exam..." oninput="searchExams()">
+            </div>
+            <div class="filter-tags">
+                <span class="filter-tag active" onclick="filterByCategory('all')">All Exams</span>
+                <span class="filter-tag" onclick="filterByCategory('engineering')">Engineering</span>
+                <span class="filter-tag" onclick="filterByCategory('medical')">Medical</span>
+                <span class="filter-tag" onclick="filterByCategory('management')">Management</span>
+                <span class="filter-tag" onclick="filterByCategory('law')">Law</span>
+                <span class="filter-tag" onclick="filterByCategory('defence')">Defence</span>
+                <span class="filter-tag" onclick="filterByCategory('banking')">Banking</span>
+                <span class="filter-tag" onclick="filterByCategory('government')">Government</span>
+                <span class="filter-tag" onclick="filterByCategory('teaching')">Teaching</span>
+                <span class="filter-tag" onclick="filterByCategory('state_psc')">State PSC</span>
+                <span class="filter-tag" onclick="filterByCategory('judicial')">Judicial</span>
+                <span class="filter-tag" onclick="filterByCategory('architecture')">Architecture</span>
+                <span class="filter-tag" onclick="filterByCategory('fashion_design')">Fashion</span>
+                <span class="filter-tag" onclick="filterByCategory('hotel_management')">Hotel</span>
+                <span class="filter-tag" onclick="filterByCategory('professional')">Professional</span>
+                <span class="filter-tag" onclick="filterByCategory('agriculture')">Agriculture</span>
+                <span class="filter-tag" onclick="filterByCategory('aviation')">Aviation</span>
+                <span class="filter-tag" onclick="filterByCategory('pharmacy')">Pharmacy</span>
+                <span class="filter-tag" onclick="filterByCategory('nursing')">Nursing</span>
+                <span class="filter-tag" onclick="filterByCategory('mass_communication')">Media</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="categories">
+        <h2 class="section-title">🎯 Explore 78+ Competitive Exams Across 18+ Categories</h2>
+        <div class="category-grid" id="categoryGrid">
+            <!-- Category cards will be dynamically generated -->
+        </div>
+    </main>
+
+    <!-- Exam Details Modal -->
+    <div class="modal" id="examModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Exam Details</h2>
+                <button class="bookmark-btn" id="bookmarkBtn" onclick="toggleBookmark()">
+                    <i class="far fa-bookmark" id="bookmarkIcon"></i>
+                </button>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- Progress Tracking -->
+                <div class="progress-section">
+                    <div class="progress-title">
+                        <span>📊 Your Progress</span>
+                        <span id="progressPercent">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                    </div>
+                    <div class="progress-actions">
+                        <button class="btn" onclick="updateProgress(10)">+10% Progress</button>
+                        <button class="btn btn-secondary" onclick="resetProgress()">Reset</button>
+                    </div>
+                </div>
+
+                <!-- Exam Info -->
+                <div class="exam-info" id="examInfo">
+                    <!-- Info items will be populated dynamically -->
+                </div>
+
+                <!-- Tabs -->
+                <div class="tabs">
+                    <button class="tab active" onclick="switchTab('overview')">📋 Overview</button>
+                    <button class="tab" onclick="switchTab('roadmap')">🗺️ Roadmap</button>
+                    <button class="tab" onclick="switchTab('resources')">📚 Resources</button>
+                    <button class="tab" onclick="switchTab('tips')">💡 Success Tips</button>
+                </div>
+
+                <!-- Tab Contents -->
+                <div class="tab-content active" id="overview">
+                    <div id="overviewContent">
+                        <!-- Overview content will be populated dynamically -->
+                    </div>
+                </div>
+
+                <div class="tab-content" id="roadmap">
+                    <div id="roadmapContent">
+                        <!-- Roadmap phases will be populated dynamically -->
+                    </div>
+                </div>
+
+                <div class="tab-content" id="resources">
+                    <div id="resourcesContent">
+                        <!-- Resources will be populated dynamically -->
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tips">
+                    <div id="tipsContent">
+                        <!-- Tips will be populated dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Advanced Features Section -->
+    <div class="advanced-search" id="advancedSearch">
+        <h3 style="margin-bottom: 16px;">🔍 Advanced Search &amp; Filters</h3>
+        <div class="search-filters">
+            <div class="filter-group">
+                <label class="filter-label">Difficulty Level</label>
+                <select class="filter-select" id="difficultyFilter">
+                    <option value="">All Levels</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                    <option value="very-high">Very High</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label class="filter-label">Duration</label>
+                <select class="filter-select" id="durationFilter">
+                    <option value="">All Durations</option>
+                    <option value="short">Up to 6 months</option>
+                    <option value="medium">6-12 months</option>
+                    <option value="long">12+ months</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label class="filter-label">Eligibility</label>
+                <select class="filter-select" id="eligibilityFilter">
+                    <option value="">All Eligibilities</option>
+                    <option value="12th">12th Pass</option>
+                    <option value="graduation">Graduation</option>
+                    <option value="postgrad">Post Graduation</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label class="filter-label">Success Rate</label>
+                <select class="filter-select" id="successFilter">
+                    <option value="">All Rates</option>
+                    <option value="high">High Success Rate</option>
+                    <option value="medium">Medium Success Rate</option>
+                    <option value="competitive">Highly Competitive</option>
+                </select>
+            </div>
+        </div>
+        <div style="display: flex; gap: 12px;">
+            <button class="btn" onclick="applyAdvancedFilters()">Apply Filters</button>
+            <button class="btn btn-secondary" onclick="clearAdvancedFilters()">Clear All</button>
+        </div>
+    </div>
+
+    <!-- Comparison Tool -->
+    <div class="comparison-tool" id="comparisonTool" style="display: none;">
+        <h3 style="margin-bottom: 16px;">⚖️ Exam Comparison Tool</h3>
+        <p style="color: var(--color-text-secondary); margin-bottom: 16px;">Compare up to 3 exams side by side</p>
+        <div class="comparison-grid" id="comparisonGrid">
+            <!-- Comparison cards will be added here -->
+        </div>
+        <div style="text-align: center; margin-top: 16px;">
+            <button class="btn btn-secondary" onclick="clearComparison()">Clear Comparison</button>
+        </div>
+    </div>
+
+    <!-- Smart Recommendations -->
+    <div class="smart-recommendations" id="recommendations" style="display: none;">
+        <h3 style="margin-bottom: 16px;">🤖 AI-Powered Recommendations</h3>
+        <p style="color: var(--color-text-secondary); margin-bottom: 16px;">Based on your interests and profile</p>
+        <div id="recommendationsList">
+            <!-- Recommendations will be populated here -->
+        </div>
+    </div>
+
+    <!-- Analytics Dashboard -->
+    <div class="analytics-dashboard" id="analytics" style="display: none;">
+        <div class="analytics-card">
+            <div class="analytics-number" id="studyStreak">0</div>
+            <div class="analytics-label">Study Streak (Days)</div>
+        </div>
+        <div class="analytics-card">
+            <div class="analytics-number" id="totalBookmarks">0</div>
+            <div class="analytics-label">Bookmarked Exams</div>
+        </div>
+        <div class="analytics-card">
+            <div class="analytics-number" id="avgProgress">0%</div>
+            <div class="analytics-label">Average Progress</div>
+        </div>
+        <div class="analytics-card">
+            <div class="analytics-number" id="completedMilestones">0</div>
+            <div class="analytics-label">Completed Milestones</div>
+        </div>
+    </div>
+
+    <!-- Success Stories Section -->
+    <div class="success-stories" id="successStories" style="display: none;">
+        <h3 style="margin-bottom: 16px;">🌟 Success Stories</h3>
+        <div class="story-carousel">
+            <div class="story-card">
+                <div class="story-quote">
+                    This platform helped me crack JEE Advanced with a systematic approach. The roadmap was incredibly detailed and motivating!
+                </div>
+                <div class="story-author">
+                    <span class="category-icon">👨‍🎓</span>
+                    <div>
+                        <div style="font-weight: 600;">Rahul Sharma</div>
+                        <div style="font-size: 12px; color: var(--color-text-secondary);">IIT Delhi, Computer Science</div>
+                    </div>
+                </div>
+            </div>
+            <div class="story-card">
+                <div class="story-quote">
+                    The NEET preparation guide was comprehensive. The phase-wise approach helped me secure a rank in top 100!
+                </div>
+                <div class="story-author">
+                    <span class="category-icon">👩‍⚕️</span>
+                    <div>
+                        <div style="font-weight: 600;">Priya Patel</div>
+                        <div style="font-size: 12px; color: var(--color-text-secondary);">AIIMS Delhi, MBBS</div>
+                    </div>
+                </div>
+            </div>
+            <div class="story-card">
+                <div class="story-quote">
+                    CAT preparation became so much easier with the structured roadmap. Scored 99.8 percentile!
+                </div>
+                <div class="story-author">
+                    <span class="category-icon">📊</span>
+                    <div>
+                        <div style="font-weight: 600;">Amit Kumar</div>
+                        <div style="font-size: 12px; color: var(--color-text-secondary);">IIM Ahmedabad, MBA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Study Planner -->
+    <div class="study-planner" id="studyPlanner" style="display: none;">
+        <h3 style="margin-bottom: 16px;">📅 Personal Study Planner</h3>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+            <span style="font-weight: 600;">November 2025</span>
+            <div>
+                <button class="btn btn-secondary" onclick="generateStudyPlan()">Generate Plan</button>
+                <button class="btn" onclick="markStudyDay()">Mark Today Complete</button>
+            </div>
+        </div>
+        <div class="planner-calendar" id="studyCalendar">
+            <!-- Calendar will be generated here -->
+        </div>
+    </div>
+
+    <!-- Floating Tools -->
+    <div class="floating-tools">
+        <button class="tool-btn" onclick="toggleAdvancedSearch()" title="Advanced Search">
+            <i class="fas fa-search-plus"></i>
+        </button>
+        <button class="tool-btn" onclick="toggleComparison()" title="Compare Exams">
+            <i class="fas fa-balance-scale"></i>
+        </button>
+        <button class="tool-btn" onclick="toggleRecommendations()" title="Get Recommendations">
+            <i class="fas fa-magic"></i>
+        </button>
+        <button class="tool-btn" onclick="toggleAnalytics()" title="View Analytics">
+            <i class="fas fa-chart-line"></i>
+        </button>
+        <button class="tool-btn" onclick="toggleSuccessStories()" title="Success Stories">
+            <i class="fas fa-trophy"></i>
+        </button>
+        <button class="tool-btn" onclick="toggleStudyPlanner()" title="Study Planner">
+            <i class="fas fa-calendar-alt"></i>
+        </button>
+    </div>
+
+    <!-- Floating Action Button -->
+    <button class="fab" onclick="showBookmarks()" title="View Bookmarked Exams">
+        <i class="fas fa-bookmark"></i>
+    </button>
+
+    <script>
+        // Exam data structure - Enhanced with 75+ exams across 15+ categories
+        const examData = {
+            engineering: {
+                name: "Engineering Entrance",
+                icon: "⚙️",
+                description: "IITs, NITs, and top engineering colleges",
+                bgColor: "var(--color-bg-1)",
+                exams: [
+                    {
+                        name: "JEE Main",
+                        duration: "12 months",
+                        difficulty: "High",
+                        subjects: ["Physics", "Chemistry", "Mathematics"],
+                        attempts_per_year: 2,
+                        eligibility: "12th Pass with PCM",
+                        overview: "Gateway to NITs, IIITs, and other engineering colleges",
+                        key_dates: [
+                            "January Session: Registration Oct-Nov, Exam Jan-Feb",
+                            "April Session: Registration Feb-Mar, Exam Apr-May"
+                        ],
+                        preparation_strategy: {
+                            phase1: "Foundation Building (Months 1-4): Complete NCERT thoroughly, build concepts",
+                            phase2: "Advanced Practice (Months 5-8): Reference books, previous papers",
+                            phase3: "Intensive Practice (Months 9-11): Mock tests, time management",
+                            phase4: "Final Revision (Month 12): Quick revision, confidence building"
+                        },
+                        study_plan: {
+                            daily_hours: "6-8 hours",
+                            physics_time: "2.5 hours",
+                            chemistry_time: "2.5 hours",
+                            mathematics_time: "3 hours"
+                        },
+                        resources: {
+                            books: ["NCERT Physics/Chemistry/Maths", "HC Verma Physics", "OP Tandon Chemistry"],
+                            online: ["Khan Academy", "Unacademy", "BYJU'S"]
+                        },
+                        success_tips: [
+                            "Master NCERT concepts first",
+                            "Practice numerical problems daily",
+                            "Take regular mock tests",
+                            "Analyze mistakes thoroughly"
+                        ]
+                    },
+                    {
+                        name: "JEE Advanced",
+                        duration: "14 months",
+                        difficulty: "Very High",
+                        subjects: ["Physics", "Chemistry", "Mathematics"],
+                        attempts_per_year: 1,
+                        eligibility: "JEE Main qualified, top 2.5 lakh",
+                        overview: "Entrance to prestigious IITs across India",
+                        preparation_strategy: {
+                            phase1: "JEE Main Foundation (Months 1-8): Build strong base for Main",
+                            phase2: "Advanced Concepts (Months 9-11): Higher level problem solving",
+                            phase3: "Intensive Practice (Months 12-13): Advanced level questions",
+                            phase4: "Final Polish (Month 14): Last minute preparation"
+                        }
+                    },
+                    {
+                        name: "BITSAT",
+                        duration: "10 months",
+                        difficulty: "High",
+                        subjects: ["Physics", "Chemistry", "Mathematics/Biology", "English", "Logical Reasoning"],
+                        attempts_per_year: 2,
+                        eligibility: "12th Pass with 75% in PCM/PCB",
+                        overview: "Admission to BITS Pilani campuses"
+                    },
+                    {
+                        name: "VITEEE",
+                        duration: "8 months",
+                        difficulty: "Medium",
+                        subjects: ["Physics", "Chemistry", "Mathematics/Biology"],
+                        attempts_per_year: 1,
+                        eligibility: "12th Pass with 60% in PCM/PCB",
+                        overview: "VIT University entrance examination"
+                    },
+                    {
+                        name: "COMEDK UGET",
+                        duration: "8 months",
+                        difficulty: "Medium-High",
+                        subjects: ["Physics", "Chemistry", "Mathematics"],
+                        eligibility: "12th Pass with PCM",
+                        overview: "Consortium of Medical, Engineering & Dental Colleges of Karnataka"
+                    },
+                    {
+                        name: "MHT CET",
+                        duration: "6 months",
+                        difficulty: "Medium",
+                        subjects: ["Physics", "Chemistry", "Mathematics"],
+                        eligibility: "12th Pass from Maharashtra",
+                        overview: "Maharashtra Health & Technical Common Entrance Test"
+                    },
+                    {
+                        name: "KCET",
+                        duration: "6 months",
+                        difficulty: "Medium",
+                        subjects: ["Physics", "Chemistry", "Mathematics", "Biology"],
+                        eligibility: "12th Pass from Karnataka",
+                        overview: "Karnataka Common Entrance Test"
+                    },
+                    {
+                        name: "EAMCET",
+                        duration: "6 months",
+                        difficulty: "Medium",
+                        subjects: ["Physics", "Chemistry", "Mathematics"],
+                        eligibility: "12th Pass from AP/Telangana",
+                        overview: "Engineering, Agriculture & Medical Common Entrance Test"
+                    },
+                    {
+                        name: "WBJEE",
+                        duration: "6 months",
+                        difficulty: "Medium",
+                        subjects: ["Physics", "Chemistry", "Mathematics"],
+                        eligibility: "12th Pass from West Bengal",
+                        overview: "West Bengal Joint Entrance Examination"
+                    },
+                    {
+                        name: "SRMJEEE",
+                        duration: "6 months",
+                        difficulty: "Medium",
+                        subjects: ["Physics", "Chemistry", "Mathematics"],
+                        eligibility: "12th Pass with PCM",
+                        overview: "SRM Joint Engineering Entrance Examination"
+                    },
+                    {
+                        name: "KIITEE",
+                        duration: "4 months",
+                        difficulty: "Medium",
+                        subjects: ["Physics", "Chemistry", "Mathematics"],
+                        eligibility: "12th Pass with PCM",
+                        overview: "Kalinga Institute of Industrial Technology Entrance Exam"
+                    }
+                ]
+            },
+            medical: {
+                name: "Medical Entrance",
+                icon: "🏥",
+                description: "MBBS, BDS, and medical courses",
+                bgColor: "var(--color-bg-4)",
+                exams: [
+                    {
+                        name: "NEET-UG",
+                        duration: "12 months",
+                        difficulty: "Very High",
+                        subjects: ["Physics", "Chemistry", "Biology (Botany + Zoology)"],
+                        attempts_per_year: 1,
+                        eligibility: "12th Pass with PCB",
+                        overview: "Single entrance for all medical colleges in India",
+                        key_dates: [
+                            "Registration: March-April",
+                            "Exam Date: First Sunday of May",
+                            "Results: June"
+                        ],
+                        preparation_strategy: {
+                            phase1: "NCERT Mastery (Months 1-4): Complete NCERT 11th & 12th",
+                            phase2: "Concept Building (Months 5-8): Reference books, detailed study",
+                            phase3: "Practice Phase (Months 9-11): Mock tests, previous years",
+                            phase4: "Revision (Month 12): Quick revision, formula sheets"
+                        },
+                        study_plan: {
+                            daily_hours: "8-10 hours",
+                            physics_time: "2 hours",
+                            chemistry_time: "3 hours",
+                            biology_time: "4 hours",
+                            revision_time: "1 hour"
+                        },
+                        resources: {
+                            books: ["NCERT Biology/Physics/Chemistry", "Trueman's Biology", "Morrison & Boyd Chemistry"],
+                            online: ["Aakash Digital", "Unacademy", "Physics Wallah"]
+                        },
+                        success_tips: [
+                            "NCERT is the bible for NEET",
+                            "Focus more on Biology (50% weightage)",
+                            "Avoid negative marking",
+                            "Regular revision is crucial"
+                        ]
+                    },
+                    {
+                        name: "AIIMS MBBS",
+                        duration: "12 months",
+                        difficulty: "Very High",
+                        note: "Now conducted through NEET-UG from 2020",
+                        overview: "Admission to All India Institute of Medical Sciences"
+                    },
+                    {
+                        name: "JIPMER",
+                        duration: "12 months",
+                        difficulty: "Very High",
+                        note: "Now conducted through NEET-UG from 2020",
+                        overview: "Jawaharlal Institute of Postgraduate Medical Education & Research"
+                    },
+                    {
+                        name: "NEET PG",
+                        duration: "12 months",
+                        difficulty: "Very High",
+                        subjects: ["Pre-clinical", "Para-clinical", "Clinical subjects"],
+                        eligibility: "MBBS degree",
+                        overview: "National Eligibility cum Entrance Test for Postgraduate"
+                    },
+                    {
+                        name: "NEET SS",
+                        duration: "8 months",
+                        difficulty: "Very High",
+                        subjects: ["Specialty specific subjects"],
+                        eligibility: "PG Medical degree",
+                        overview: "NEET Super Speciality examination"
+                    },
+                    {
+                        name: "INI CET",
+                        duration: "10 months",
+                        difficulty: "Very High",
+                        subjects: ["Pre-clinical", "Para-clinical", "Clinical subjects"],
+                        eligibility: "MBBS degree",
+                        overview: "Institute of National Importance Combined Entrance Test"
+                    }
+                ]
+            },
+            management: {
+                name: "Management",
+                icon: "📊",
+                description: "MBA and management programs",
+                bgColor: "var(--color-bg-5)",
+                exams: [
+                    {
+                        name: "CAT",
+                        duration: "12 months",
+                        difficulty: "Very High",
+                        subjects: ["Quantitative Ability", "Verbal Ability & Reading Comprehension", "Data Interpretation & Logical Reasoning"],
+                        attempts_per_year: 1,
+                        eligibility: "Bachelor's degree with 50% marks",
+                        overview: "Gateway to IIMs and top B-schools",
+                        key_dates: [
+                            "Registration: August-September",
+                            "Exam Date: Last Sunday of November",
+                            "Results: January"
+                        ],
+                        preparation_strategy: {
+                            phase1: "Foundation (Months 1-4): Basic concepts, fundamentals",
+                            phase2: "Skill Building (Months 5-8): Advanced topics, speed building",
+                            phase3: "Test Series (Months 9-11): Extensive mock tests",
+                            phase4: "Final Prep (Month 12): Strategy refinement"
+                        },
+                        study_plan: {
+                            daily_hours: "4-6 hours",
+                            quant_time: "2 hours",
+                            verbal_time: "2 hours",
+                            dilr_time: "2 hours"
+                        },
+                        success_tips: [
+                            "Focus on accuracy over speed initially",
+                            "Read newspapers daily for VA",
+                            "Practice DI/LR sets regularly",
+                            "Take sectional and mock tests"
+                        ]
+                    },
+                    {
+                        name: "XAT",
+                        duration: "10 months",
+                        difficulty: "High",
+                        subjects: ["Quantitative Ability", "Verbal Ability", "Data Interpretation", "Decision Making", "General Knowledge"],
+                        eligibility: "Bachelor's degree",
+                        overview: "Xavier Aptitude Test for XLRI and other institutes"
+                    },
+                    {
+                        name: "MAT",
+                        duration: "6 months",
+                        difficulty: "Medium",
+                        subjects: ["Language Comprehension", "Mathematical Skills", "Data Analysis", "Intelligence & Critical Reasoning", "Indian & Global Environment"],
+                        overview: "Management Aptitude Test accepted by 800+ B-schools"
+                    },
+                    {
+                        name: "CMAT",
+                        duration: "6 months",
+                        difficulty: "Medium",
+                        subjects: ["Quantitative Techniques", "Logical Reasoning", "Language Comprehension", "General Awareness"],
+                        overview: "Common Management Admission Test by NTA"
+                    },
+                    {
+                        name: "SNAP",
+                        duration: "8 months",
+                        difficulty: "Medium-High",
+                        subjects: ["General English", "Quantitative Aptitude", "General Awareness", "Analytical & Logical Reasoning"],
+                        eligibility: "Bachelor's degree",
+                        overview: "Symbiosis National Aptitude Test"
+                    },
+                    {
+                        name: "NMAT",
+                        duration: "8 months",
+                        difficulty: "Medium-High",
+                        subjects: ["Language Skills", "Quantitative Skills", "Logical Reasoning"],
+                        eligibility: "Bachelor's degree",
+                        overview: "NMIMS Management Aptitude Test"
+                    },
+                    {
+                        name: "IIFT",
+                        duration: "10 months",
+                        difficulty: "High",
+                        subjects: ["English Comprehension", "Logical Reasoning", "Quantitative Analysis", "General Awareness"],
+                        eligibility: "Bachelor's degree",
+                        overview: "Indian Institute of Foreign Trade entrance exam"
+                    },
+                    {
+                        name: "TISSNET",
+                        duration: "6 months",
+                        difficulty: "Medium",
+                        subjects: ["General Awareness", "English Proficiency", "Mathematical Skills", "Logical Reasoning"],
+                        eligibility: "Bachelor's degree",
+                        overview: "Tata Institute of Social Sciences National Entrance Test"
+                    }
+                ]
+            },
+            law: {
+                name: "Law Entrance",
+                icon: "⚖️",
+                description: "LLB and law programs",
+                bgColor: "var(--color-bg-6)",
+                exams: [
+                    {
+                        name: "CLAT",
+                        duration: "10 months",
+                        difficulty: "High",
+                        subjects: ["English Language", "Current Affairs & GK", "Legal Reasoning", "Logical Reasoning", "Quantitative Techniques"],
+                        attempts_per_year: 1,
+                        eligibility: "12th Pass (for UG), Graduation (for PG)",
+                        overview: "Common Law Admission Test for 24 National Law Universities",
+                        preparation_strategy: {
+                            phase1: "Foundation (Months 1-3): Basic concepts, reading habits",
+                            phase2: "Skill Development (Months 4-6): Advanced reasoning, legal concepts",
+                            phase3: "Practice Phase (Months 7-9): Mock tests, previous years",
+                            phase4: "Final Preparation (Month 10): Revision and strategy"
+                        },
+                        study_plan: {
+                            daily_hours: "6-8 hours",
+                            english_time: "1.5 hours",
+                            current_affairs_time: "2 hours",
+                            legal_reasoning_time: "2 hours",
+                            logical_reasoning_time: "1.5 hours",
+                            quant_time: "1 hour"
+                        },
+                        success_tips: [
+                            "Read newspapers daily for current affairs",
+                            "Practice reading comprehension regularly",
+                            "Understand legal principles, don't memorize",
+                            "Time management is crucial"
+                        ]
+                    },
+                    {
+                        name: "AILET",
+                        duration: "10 months",
+                        difficulty: "High",
+                        subjects: ["English", "General Knowledge", "Legal Reasoning", "Logical Reasoning"],
+                        overview: "All India Law Entrance Test for NLU Delhi"
+                    }
+                ]
+            },
+            defence: {
+                name: "Defence Exams",
+                icon: "🛡️",
+                description: "Army, Navy, Air Force",
+                bgColor: "var(--color-bg-7)",
+                exams: [
+                    {
+                        name: "NDA",
+                        duration: "12 months",
+                        difficulty: "High",
+                        subjects: ["Mathematics", "General Ability Test (GAT)"],
+                        attempts_per_year: 2,
+                        eligibility: "12th Pass, Age 16.5-19.5 years",
+                        overview: "National Defence Academy for Army, Navy, Air Force officer training",
+                        key_dates: [
+                            "NDA I: Application Dec, Exam Apr",
+                            "NDA II: Application Jun, Exam Sep"
+                        ],
+                        preparation_strategy: {
+                            phase1: "Foundation (Months 1-4): Mathematics basics, GK building",
+                            phase2: "Advance Prep (Months 5-8): Problem solving, current affairs",
+                            phase3: "Intensive Practice (Months 9-11): Mock tests, speed building",
+                            phase4: "SSB Preparation (Month 12): Interview skills, personality development"
+                        },
+                        study_plan: {
+                            daily_hours: "6-8 hours",
+                            mathematics_time: "3 hours",
+                            gat_time: "3 hours",
+                            physical_fitness: "2 hours"
+                        },
+                        success_tips: [
+                            "Mathematics requires strong fundamentals",
+                            "Stay updated with current affairs",
+                            "Physical fitness is equally important",
+                            "Practice previous year papers extensively"
+                        ]
+                    },
+                    {
+                        name: "CDS",
+                        duration: "10 months",
+                        difficulty: "High",
+                        subjects: ["English", "General Knowledge", "Elementary Mathematics"],
+                        attempts_per_year: 2,
+                        eligibility: "Graduation, Age 19-25 years",
+                        overview: "Combined Defence Services for IMA, INA, AFA, OTA"
+                    },
+                    {
+                        name: "AFCAT",
+                        duration: "8 months",
+                        difficulty: "Medium-High",
+                        subjects: ["General Awareness", "Verbal Ability", "Numerical Ability", "Reasoning"],
+                        attempts_per_year: 2,
+                        overview: "Air Force Common Admission Test"
+                    }
+                ]
+            },
+            banking: {
+                name: "Banking Exams",
+                icon: "🏦",
+                description: "SBI, IBPS, RBI banking jobs",
+                bgColor: "var(--color-bg-8)",
+                exams: [
+                    {
+                        name: "IBPS PO",
+                        duration: "8 months",
+                        difficulty: "High",
+                        subjects: ["Reasoning", "Quantitative Aptitude", "English Language", "General Awareness", "Computer Aptitude"],
+                        attempts_per_year: 1,
+                        eligibility: "Graduation, Age 20-30 years",
+                        overview: "Institute of Banking Personnel Selection - Probationary Officer",
+                        preparation_strategy: {
+                            phase1: "Basics (Months 1-2): Fundamental concepts in all subjects",
+                            phase2: "Skill Building (Months 3-5): Advanced topics, speed building",
+                            phase3: "Test Series (Months 6-7): Extensive practice tests",
+                            phase4: "Interview Prep (Month 8): GD, PI preparation"
+                        },
+                        study_plan: {
+                            daily_hours: "6-7 hours",
+                            reasoning_time: "2 hours",
+                            quant_time: "2 hours",
+                            english_time: "1.5 hours",
+                            ga_computer_time: "1.5 hours"
+                        },
+                        success_tips: [
+                            "Focus on accuracy in Prelims",
+                            "Stay updated with banking current affairs",
+                            "Practice data interpretation regularly",
+                            "Prepare well for interview round"
+                        ]
+                    },
+                    {
+                        name: "SBI PO",
+                        duration: "8 months",
+                        difficulty: "High",
+                        subjects: ["Reasoning", "Quantitative Aptitude", "English Language", "General Awareness"],
+                        overview: "State Bank of India Probationary Officer"
+                    },
+                    {
+                        name: "IBPS Clerk",
+                        duration: "6 months",
+                        difficulty: "Medium",
+                        subjects: ["Reasoning", "Quantitative Aptitude", "English Language", "General Awareness", "Computer Knowledge"],
+                        overview: "IBPS Clerical cadre recruitment"
+                    },
+                    {
+                        name: "RBI Grade B",
+                        duration: "10 months",
+                        difficulty: "Very High",
+                        subjects: ["General Awareness", "English Language", "Quantitative Aptitude", "Reasoning", "Finance & Management"],
+                        overview: "Reserve Bank of India Grade B Officer"
+                    }
+                ]
+            },
+            government: {
+                name: "Government Jobs",
+                icon: "🏛️",
+                description: "UPSC, SSC, Railway jobs",
+                bgColor: "var(--color-bg-1)",
+                exams: [
+                    {
+                        name: "UPSC CSE",
+                        duration: "18 months",
+                        difficulty: "Very High",
+                        subjects: ["General Studies", "Optional Subject", "Essay", "CSAT"],
+                        attempts_per_year: 1,
+                        eligibility: "Graduation, Age 21-32 years",
+                        overview: "Civil Services Examination for IAS, IPS, IFS",
+                        preparation_strategy: {
+                            phase1: "Foundation (Months 1-6): Basic books, newspaper reading",
+                            phase2: "Detailed Study (Months 7-12): Standard books, note making",
+                            phase3: "Revision & Tests (Months 13-15): Answer writing practice",
+                            phase4: "Final Preparation (Months 16-18): Intensive revision"
+                        },
+                        study_plan: {
+                            daily_hours: "10-12 hours",
+                            newspaper_time: "2 hours",
+                            gs_subjects_time: "6 hours",
+                            optional_time: "3 hours",
+                            revision_time: "1 hour"
+                        },
+                        success_tips: [
+                            "Consistency is more important than intensity",
+                            "Focus on answer writing skills",
+                            "Read newspaper daily without fail",
+                            "Join test series for evaluation"
+                        ]
+                    },
+                    {
+                        name: "SSC CGL",
+                        duration: "8 months",
+                        difficulty: "High",
+                        subjects: ["General Intelligence & Reasoning", "General Awareness", "Quantitative Aptitude", "English Comprehension"],
+                        overview: "Staff Selection Commission Combined Graduate Level"
+                    },
+                    {
+                        name: "Railway NTPC",
+                        duration: "6 months",
+                        difficulty: "Medium",
+                        subjects: ["General Awareness", "Mathematics", "General Intelligence & Reasoning"],
+                        overview: "Non-Technical Popular Categories in Railways"
+                    }
+                ]
+            },
+            teaching: {
+                name: "Teaching Exams",
+                icon: "👨‍🏫",
+                description: "CTET, UGC NET, TET",
+                bgColor: "var(--color-bg-3)",
+                exams: [
+                    {
+                        name: "CTET",
+                        duration: "4 months",
+                        difficulty: "Medium",
+                        subjects: ["Child Development & Pedagogy", "Language I & II", "Mathematics", "Environmental Studies", "Social Studies/Science"],
+                        attempts_per_year: 2,
+                        eligibility: "12th/Graduation with B.Ed",
+                        overview: "Central Teacher Eligibility Test",
+                        preparation_strategy: {
+                            phase1: "Concept Building (Month 1): Basic pedagogy, child development",
+                            phase2: "Subject Mastery (Month 2): Content subjects preparation",
+                            phase3: "Practice Phase (Month 3): Mock tests, previous papers",
+                            phase4: "Final Revision (Month 4): Quick revision, strategy"
+                        },
+                        success_tips: [
+                            "Focus on child development theories",
+                            "Understand pedagogy concepts thoroughly",
+                            "Practice teaching methodology questions",
+                            "Solve previous year papers"
+                        ]
+                    },
+                    {
+                        name: "UGC NET",
+                        duration: "10 months",
+                        difficulty: "High",
+                        subjects: ["Teaching & Research Aptitude", "Subject Specific"],
+                        attempts_per_year: 2,
+                        overview: "National Eligibility Test for Assistant Professor"
+                    },
+                    {
+                        name: "State TET",
+                        duration: "3 months",
+                        difficulty: "Medium",
+                        subjects: ["Child Development", "Language", "Mathematics", "EVS/Science/Social Studies"],
+                        overview: "State Teacher Eligibility Tests"
+                    }
+                ]
+            },
+            state_psc: {
+                name: "State PSC Exams",
+                icon: "🏢",
+                description: "State civil services and administrative posts",
+                bgColor: "var(--color-bg-5)",
+                exams: [
+                    {
+                        name: "UPPSC PCS",
+                        duration: "15 months",
+                        difficulty: "Very High",
+                        subjects: ["General Studies", "Hindi", "Essay", "General Hindi"],
+                        eligibility: "Graduation (21-40 years)",
+                        overview: "Uttar Pradesh Provincial Civil Services",
+                        preparation_strategy: {
+                            phase1: "Foundation Building (Months 1-6): Basic books, newspaper reading",
+                            phase2: "Detailed Study (Months 7-10): Standard books, note making",
+                            phase3: "Answer Writing Practice (Months 11-13): Mock tests, test series",
+                            phase4: "Final Revision & Interview Prep (Months 14-15): Intensive revision"
+                        },
+                        success_tips: [
+                            "Focus on UP-specific current affairs",
+                            "Master Hindi language and literature",
+                            "Practice answer writing regularly",
+                            "Study UP government schemes thoroughly"
+                        ]
+                    },
+                    {
+                        name: "MPPSC",
+                        duration: "12 months",
+                        difficulty: "High",
+                        subjects: ["General Studies", "General Aptitude Test", "Hindi"],
+                        eligibility: "Graduation (21-40 years)",
+                        overview: "Madhya Pradesh Public Service Commission"
+                    },
+                    {
+                        name: "RPSC RAS",
+                        duration: "12 months",
+                        difficulty: "High",
+                        subjects: ["General Studies", "General Hindi & English"],
+                        eligibility: "Graduation (21-40 years)",
+                        overview: "Rajasthan Administrative Services"
+                    },
+                    {
+                        name: "BPSC",
+                        duration: "12 months",
+                        difficulty: "High",
+                        subjects: ["General Studies", "General Hindi", "Optional Subject"],
+                        eligibility: "Graduation (20-37 years)",
+                        overview: "Bihar Public Service Commission"
+                    },
+                    {
+                        name: "MPSC",
+                        duration: "12 months",
+                        difficulty: "High",
+                        subjects: ["General Studies", "Marathi", "English"],
+                        eligibility: "Graduation (19-38 years)",
+                        overview: "Maharashtra Public Service Commission"
+                    },
+                    {
+                        name: "KPSC KAS",
+                        duration: "12 months",
+                        difficulty: "High",
+                        subjects: ["General Studies", "Kannada", "English"],
+                        eligibility: "Graduation (21-35 years)",
+                        overview: "Karnataka Administrative Services"
+                    },
+                    {
+                        name: "TNPSC Group 1",
+                        duration: "10 months",
+                        difficulty: "High",
+                        subjects: ["General Studies", "Aptitude & Mental Ability"],
+                        eligibility: "Graduation (18-30 years)",
+                        overview: "Tamil Nadu Public Service Commission Group 1"
+                    },
+                    {
+                        name: "APPSC Group 1",
+                        duration: "10 months",
+                        difficulty: "High",
+                        subjects: ["General Studies", "General Mental Ability"],
+                        eligibility: "Graduation (18-42 years)",
+                        overview: "Andhra Pradesh Public Service Commission Group 1"
+                    },
+                    {
+                        name: "WBCS",
+                        duration: "12 months",
+                        difficulty: "High",
+                        subjects: ["General Studies", "Bengali/Nepali/Hindi/Urdu/English"],
+                        eligibility: "Graduation (21-36 years)",
+                        overview: "West Bengal Civil Services"
+                    }
+                ]
+            },
+            judicial: {
+                name: "Judicial Services",
+                icon: "⚖️",
+                description: "Judiciary and legal services",
+                bgColor: "var(--color-bg-6)",
+                exams: [
+                    {
+                        name: "UP Judicial Service",
+                        duration: "15 months",
+                        difficulty: "Very High",
+                        subjects: ["Civil Law", "Criminal Law", "Constitutional Law", "Current Affairs"],
+                        eligibility: "LLB (22-40 years)",
+                        overview: "Uttar Pradesh Higher Judicial Service",
+                        preparation_strategy: {
+                            phase1: "Foundation (Months 1-4): Bare Acts study, basic concepts",
+                            phase2: "Building Phase (Months 5-10): Case laws, judgments, legal principles",
+                            phase3: "Practice Phase (Months 11-13): Answer writing, mock tests",
+                            phase4: "Final Preparation (Months 14-15): Revision, interview preparation"
+                        },
+                        study_plan: {
+                            daily_hours: "10-12 hours",
+                            civil_law_time: "3 hours",
+                            criminal_law_time: "3 hours",
+                            constitutional_law_time: "2 hours",
+                            current_affairs_time: "2 hours",
+                            answer_writing_time: "2 hours"
+                        },
+                        success_tips: [
+                            "Master bare acts thoroughly",
+                            "Read landmark judgments",
+                            "Practice legal writing skills",
+                            "Stay updated with recent legal developments"
+                        ]
+                    },
+                    {
+                        name: "Delhi Judicial Service",
+                        duration: "12 months",
+                        difficulty: "Very High",
+                        subjects: ["Civil Law", "Criminal Law", "Constitutional Law"],
+                        eligibility: "LLB (23-35 years)",
+                        overview: "Delhi Higher Judicial Service"
+                    },
+                    {
+                        name: "MP Judicial Service",
+                        duration: "12 months",
+                        difficulty: "High",
+                        subjects: ["Civil Law", "Criminal Law", "Constitutional Law"],
+                        eligibility: "LLB (21-35 years)",
+                        overview: "Madhya Pradesh Judicial Services"
+                    },
+                    {
+                        name: "Rajasthan Judicial Service",
+                        duration: "12 months",
+                        difficulty: "High",
+                        subjects: ["Civil Law", "Criminal Law", "Constitutional Law"],
+                        eligibility: "LLB (21-35 years)",
+                        overview: "Rajasthan Higher Judicial Service"
+                    },
+                    {
+                        name: "Higher Judicial Service",
+                        duration: "18 months",
+                        difficulty: "Very High",
+                        subjects: ["Advanced Legal Subjects", "Judicial Administration"],
+                        eligibility: "7+ years legal practice or District Judge",
+                        overview: "Direct recruitment to High Court"
+                    }
+                ]
+            },
+            architecture: {
+                name: "Architecture & Design",
+                icon: "🏗️",
+                description: "Architecture and spatial design",
+                bgColor: "var(--color-bg-2)",
+                exams: [
+                    {
+                        name: "NATA",
+                        duration: "8 months",
+                        difficulty: "High",
+                        subjects: ["Mathematics", "General Aptitude", "Drawing"],
+                        eligibility: "12th Pass with PCM (50%)",
+                        overview: "National Aptitude Test in Architecture",
+                        preparation_strategy: {
+                            phase1: "Foundation (Months 1-2): Basic drawing skills, mathematical concepts",
+                            phase2: "Skill Building (Months 3-5): Advanced drawing, spatial ability",
+                            phase3: "Practice Phase (Months 6-7): Mock tests, portfolio building",
+                            phase4: "Final Preparation (Month 8): Speed building, confidence"
+                        },
+                        study_plan: {
+                            daily_hours: "6-8 hours",
+                            drawing_time: "3 hours",
+                            mathematics_time: "2 hours",
+                            aptitude_time: "2 hours",
+                            observation_time: "1 hour"
+                        },
+                        success_tips: [
+                            "Develop observation skills daily",
+                            "Practice freehand drawing regularly",
+                            "Study architectural elements",
+                            "Improve visualization abilities"
+                        ]
+                    },
+                    {
+                        name: "JEE Paper 2 (B.Arch)",
+                        duration: "10 months",
+                        difficulty: "High",
+                        subjects: ["Mathematics", "Aptitude Test", "Drawing Test"],
+                        eligibility: "12th Pass with PCM",
+                        overview: "Joint Entrance Examination for Architecture"
+                    },
+                    {
+                        name: "CEPT",
+                        duration: "6 months",
+                        difficulty: "Medium-High",
+                        subjects: ["Architecture Aptitude", "Design", "Mathematics"],
+                        eligibility: "12th Pass",
+                        overview: "Centre for Environmental Planning and Technology"
+                    },
+                    {
+                        name: "SPA Delhi B.Arch",
+                        duration: "6 months",
+                        difficulty: "Medium-High",
+                        subjects: ["General Aptitude", "Mathematics", "Drawing"],
+                        eligibility: "12th Pass",
+                        overview: "School of Planning & Architecture Delhi"
+                    },
+                    {
+                        name: "GATE Architecture",
+                        duration: "8 months",
+                        difficulty: "High",
+                        subjects: ["Architecture & Planning"],
+                        eligibility: "B.Arch/B.Planning degree",
+                        overview: "Graduate Aptitude Test in Engineering - Architecture Paper"
+                    }
+                ]
+            },
+            fashion_design: {
+                name: "Fashion & Design",
+                icon: "🎨",
+                description: "Fashion, product and visual design",
+                bgColor: "var(--color-bg-7)",
+                exams: [
+                    {
+                        name: "NIFT",
+                        duration: "10 months",
+                        difficulty: "High",
+                        subjects: ["Creative Ability Test", "General Ability Test", "Situation Test"],
+                        eligibility: "12th Pass (50%)",
+                        overview: "National Institute of Fashion Technology",
+                        preparation_strategy: {
+                            phase1: "Foundation (Months 1-3): Basic design concepts, drawing skills",
+                            phase2: "Creative Building (Months 4-6): Fashion trends, creative thinking",
+                            phase3: "Portfolio Building (Months 7-9): Design portfolio, mock tests",
+                            phase4: "Final Preparation (Month 10): Situation test practice, interview prep"
+                        },
+                        success_tips: [
+                            "Develop strong observation skills",
+                            "Stay updated with fashion trends",
+                            "Practice creative interpretation daily",
+                            "Build a diverse design portfolio",
+                            "Improve drawing and sketching skills"
+                        ]
+                    },
+                    {
+                        name: "NID",
+                        duration: "10 months",
+                        difficulty: "High",
+                        subjects: ["Design Aptitude", "Portfolio", "Studio Test"],
+                        eligibility: "12th Pass",
+                        overview: "National Institute of Design"
+                    },
+                    {
+                        name: "UCEED",
+                        duration: "8 months",
+                        difficulty: "High",
+                        subjects: ["Visualization & Spatial Ability", "Environmental & Social Awareness", "Analytical & Logical Reasoning", "Language & Creativity"],
+                        eligibility: "12th Pass",
+                        overview: "Undergraduate Common Entrance Exam for Design"
+                    },
+                    {
+                        name: "CEED",
+                        duration: "8 months",
+                        difficulty: "High",
+                        subjects: ["Visualization & Spatial Ability", "Environmental & Social Awareness", "Analytical & Logical Reasoning", "Design Thinking & Problem Solving"],
+                        eligibility: "Bachelor's degree",
+                        overview: "Common Entrance Examination for Design (PG)"
+                    },
+                    {
+                        name: "FDDI",
+                        duration: "6 months",
+                        difficulty: "Medium",
+                        subjects: ["General Ability", "Creative Ability", "English Comprehension"],
+                        eligibility: "12th Pass",
+                        overview: "Footwear Design & Development Institute"
+                    }
+                ]
+            },
+            hotel_management: {
+                name: "Hotel Management",
+                icon: "🏨",
+                description: "Hospitality and tourism management",
+                bgColor: "var(--color-bg-8)",
+                exams: [
+                    {
+                        name: "NCHMCT JEE",
+                        duration: "6 months",
+                        difficulty: "Medium",
+                        subjects: ["English Language", "Numerical Ability & Scientific Aptitude", "Reasoning & Logical Deduction", "General Knowledge", "Service Aptitude"],
+                        eligibility: "12th Pass (50%)",
+                        overview: "National Council for Hotel Management & Catering Technology Joint Entrance Examination",
+                        preparation_strategy: {
+                            phase1: "Foundation (Months 1-2): Basic concepts in all subjects",
+                            phase2: "Skill Building (Months 3-4): Hospitality awareness, service aptitude",
+                            phase3: "Practice Phase (Months 5-6): Mock tests, time management"
+                        },
+                        study_plan: {
+                            daily_hours: "5-6 hours",
+                            english_time: "1.5 hours",
+                            numerical_time: "1.5 hours",
+                            reasoning_time: "1 hour",
+                            gk_time: "1 hour",
+                            service_aptitude_time: "1 hour"
+                        },
+                        success_tips: [
+                            "Understand hospitality industry basics",
+                            "Develop service-oriented mindset",
+                            "Practice numerical problems regularly",
+                            "Stay updated with tourism trends"
+                        ]
+                    },
+                    {
+                        name: "IIHMCA WAT",
+                        duration: "4 months",
+                        difficulty: "Medium",
+                        subjects: ["English", "Aptitude", "General Knowledge"],
+                        eligibility: "12th Pass",
+                        overview: "International Institute of Hotel Management Culinary Arts Written Aptitude Test"
+                    },
+                    {
+                        name: "AIHMCT WAT",
+                        duration: "4 months",
+                        difficulty: "Medium",
+                        subjects: ["English", "Numerical Ability", "Reasoning", "General Knowledge"],
+                        eligibility: "12th Pass",
+                        overview: "Army Institute of Hotel Management & Catering Technology"
+                    }
+                ]
+            },
+            professional: {
+                name: "Professional Courses",
+                icon: "💼",
+                description: "CA, CS, CMA professional qualifications",
+                bgColor: "var(--color-bg-1)",
+                exams: [
+                    {
+                        name: "CA Foundation",
+                        duration: "6 months",
+                        difficulty: "Medium",
+                        subjects: ["Principles of Accounting", "Business Laws", "Business Mathematics & Statistics", "Business Economics"],
+                        eligibility: "12th Pass (50%)",
+                        overview: "Chartered Accountancy Foundation Course",
+                        preparation_strategy: {
+                            phase1: "Concept Building (Months 1-2): Basic understanding of all subjects",
+                            phase2: "Detailed Study (Months 3-4): Problem solving, practical applications",
+                            phase3: "Practice Phase (Months 5-6): Mock tests, revision"
+                        },
+                        study_plan: {
+                            daily_hours: "6-8 hours",
+                            accounting_time: "2.5 hours",
+                            law_time: "2 hours",
+                            maths_stats_time: "2 hours",
+                            economics_time: "1.5 hours"
+                        },
+                        success_tips: [
+                            "Focus on conceptual understanding",
+                            "Practice accounting problems daily",
+                            "Memorize important legal provisions",
+                            "Solve previous year papers thoroughly"
+                        ]
+                    },
+                    {
+                        name: "CA Intermediate",
+                        duration: "12 months",
+                        difficulty: "High",
+                        subjects: ["Accounting", "Corporate Law", "Cost & Management Accounting", "Taxation", "Advanced Accounting", "Auditing & Assurance", "Enterprise Information Systems", "Financial Management"],
+                        eligibility: "CA Foundation pass or Commerce Graduate",
+                        overview: "CA Intermediate (IPCC) examination"
+                    },
+                    {
+                        name: "CA Final",
+                        duration: "18 months",
+                        difficulty: "Very High",
+                        subjects: ["Financial Reporting", "Strategic Management", "Advanced Auditing", "Corporate & Economic Laws", "Strategic Cost Management", "Direct Tax Laws", "Indirect Tax Laws"],
+                        eligibility: "CA Intermediate pass",
+                        overview: "CA Final examination for Chartered Accountancy"
+                    },
+                    {
+                        name: "CS Foundation",
+                        duration: "4 months",
+                        difficulty: "Medium",
+                        subjects: ["Business Environment & Entrepreneurship", "Business Management, Ethics & Communication", "Business Economics", "Fundamentals of Accounting & Auditing"],
+                        eligibility: "12th Pass (50%)",
+                        overview: "Company Secretary Foundation Programme"
+                    },
+                    {
+                        name: "CS Executive",
+                        duration: "10 months",
+                        difficulty: "High",
+                        subjects: ["Company Law", "Cost & Management Accounting", "Economic & Commercial Laws", "Tax Laws", "Corporate & Management Accounting", "Securities Laws", "Economic & Labour Laws", "Financial & Strategic Management"],
+                        eligibility: "CS Foundation pass or Graduate",
+                        overview: "CS Executive Programme"
+                    },
+                    {
+                        name: "CMA Foundation",
+                        duration: "4 months",
+                        difficulty: "Medium",
+                        subjects: ["Fundamentals of Accounting", "Fundamentals of Laws & Ethics", "Fundamentals of Business Mathematics & Statistics", "Fundamentals of Business Economics"],
+                        eligibility: "12th Pass (50%)",
+                        overview: "Cost & Management Accountant Foundation"
+                    },
+                    {
+                        name: "CMA Intermediate",
+                        duration: "10 months",
+                        difficulty: "High",
+                        subjects: ["Financial Accounting", "Laws & Ethics", "Direct Taxation", "Cost Accounting", "Financial Management", "Operations Management", "Strategic Management", "Cost & Management Accounting Application"],
+                        eligibility: "CMA Foundation pass or Graduate",
+                        overview: "CMA Intermediate examination"
+                    }
+                ]
+            },
+            aviation: {
+                name: "Aviation & Aerospace",
+                icon: "✈️",
+                description: "Pilot training and aviation careers",
+                bgColor: "var(--color-bg-4)",
+                exams: [
+                    {
+                        name: "AME CET",
+                        duration: "6 months",
+                        difficulty: "Medium-High",
+                        subjects: ["Physics", "Chemistry", "Mathematics", "English"],
+                        eligibility: "12th Pass with PCM",
+                        overview: "Aircraft Maintenance Engineering Common Entrance Test",
+                        success_tips: [
+                            "Strong foundation in physics and mathematics",
+                            "Understanding of aircraft systems",
+                            "Practice technical reasoning",
+                            "Stay updated with aviation technology"
+                        ]
+                    },
+                    {
+                        name: "IGRUA CPL",
+                        duration: "18 months",
+                        difficulty: "High",
+                        subjects: ["Air Navigation", "Air Regulations", "Aviation Meteorology", "Aircraft & Engines"],
+                        eligibility: "12th Pass with PCM (50%)",
+                        overview: "Indira Gandhi Rashtriya Uran Akademi Commercial Pilot License"
+                    },
+                    {
+                        name: "DGCA Ground Classes",
+                        duration: "12 months",
+                        difficulty: "High",
+                        subjects: ["Air Regulations", "Air Navigation", "Meteorology", "Aircraft & Engines", "Radio Telephony"],
+                        eligibility: "12th Pass",
+                        overview: "Directorate General of Civil Aviation Ground Classes"
+                    }
+                ]
+            },
+            merchant_navy: {
+                name: "Merchant Navy",
+                icon: "🚢",
+                description: "Marine engineering and navigation",
+                bgColor: "var(--color-bg-8)",
+                exams: [
+                    {
+                        name: "IMU CET",
+                        duration: "8 months",
+                        difficulty: "Medium-High",
+                        subjects: ["Physics", "Chemistry", "Mathematics", "English", "Aptitude"],
+                        eligibility: "12th Pass with PCM (60%)",
+                        overview: "Indian Maritime University Common Entrance Test",
+                        preparation_strategy: {
+                            phase1: "Foundation (Months 1-2): Basic PCM concepts",
+                            phase2: "Building (Months 3-5): Advanced problems, maritime awareness",
+                            phase3: "Practice (Months 6-7): Mock tests, previous papers",
+                            phase4: "Final (Month 8): Revision, interview preparation"
+                        }
+                    },
+                    {
+                        name: "DNS CET",
+                        duration: "6 months",
+                        difficulty: "Medium",
+                        subjects: ["Physics", "Chemistry", "Mathematics", "English"],
+                        eligibility: "12th Pass with PCM",
+                        overview: "Directorate of Naval Shipping Common Entrance Test"
+                    },
+                    {
+                        name: "NIOS Marine Engineering",
+                        duration: "4 months",
+                        difficulty: "Medium",
+                        subjects: ["Basic Engineering", "Marine Systems", "Safety Procedures"],
+                        eligibility: "12th Pass",
+                        overview: "National Institute of Open Schooling Marine Engineering"
+                    }
+                ]
+            },
+            pharmacy: {
+                name: "Pharmacy Sciences",
+                icon: "💊",
+                description: "Pharmaceutical sciences and research",
+                bgColor: "var(--color-bg-4)",
+                exams: [
+                    {
+                        name: "GPAT",
+                        duration: "8 months",
+                        difficulty: "High",
+                        subjects: ["Pharmaceutics", "Pharmaceutical Chemistry", "Pharmacology", "Pharmacognosy"],
+                        eligibility: "B.Pharm (60%)",
+                        overview: "Graduate Pharmacy Aptitude Test",
+                        preparation_strategy: {
+                            phase1: "Foundation (Months 1-2): Basic pharmacy subjects review",
+                            phase2: "Advanced Study (Months 3-5): Detailed subject preparation",
+                            phase3: "Practice (Months 6-7): Mock tests, case studies",
+                            phase4: "Final (Month 8): Revision, current pharma trends"
+                        },
+                        success_tips: [
+                            "Focus on pharmaceutics and pharmacology",
+                            "Stay updated with recent drug discoveries",
+                            "Practice numerical problems in pharmaceutics",
+                            "Understand drug mechanisms thoroughly"
+                        ]
+                    },
+                    {
+                        name: "NIPER JEE",
+                        duration: "10 months",
+                        difficulty: "Very High",
+                        subjects: ["Physics", "Chemistry", "Biology", "Mathematics"],
+                        eligibility: "B.Pharm/M.Sc (60%)",
+                        overview: "National Institute of Pharmaceutical Education and Research Joint Entrance Exam"
+                    },
+                    {
+                        name: "MANIPAL Pharmacy",
+                        duration: "6 months",
+                        difficulty: "Medium-High",
+                        subjects: ["Physics", "Chemistry", "Biology"],
+                        eligibility: "12th Pass with PCB",
+                        overview: "Manipal University Pharmacy Entrance Test"
+                    }
+                ]
+            },
+            nursing: {
+                name: "Nursing Sciences",
+                icon: "👩‍⚕️",
+                description: "Nursing and healthcare services",
+                bgColor: "var(--color-bg-3)",
+                exams: [
+                    {
+                        name: "AIIMS Nursing",
+                        duration: "6 months",
+                        difficulty: "High",
+                        subjects: ["Physics", "Chemistry", "Biology", "General Knowledge"],
+                        eligibility: "12th Pass with PCB (50%)",
+                        overview: "All India Institute of Medical Sciences Nursing Entrance",
+                        study_plan: {
+                            daily_hours: "6-8 hours",
+                            biology_time: "3 hours",
+                            chemistry_time: "2 hours",
+                            physics_time: "2 hours",
+                            gk_time: "1 hour"
+                        }
+                    },
+                    {
+                        name: "JIPMER Nursing",
+                        duration: "6 months",
+                        difficulty: "High",
+                        subjects: ["Physics", "Chemistry", "Biology"],
+                        eligibility: "12th Pass with PCB",
+                        overview: "JIPMER Bachelor of Science Nursing Entrance"
+                    },
+                    {
+                        name: "PGIMER Nursing",
+                        duration: "4 months",
+                        difficulty: "Medium-High",
+                        subjects: ["Nursing Concepts", "Community Health", "Medical-Surgical Nursing"],
+                        eligibility: "B.Sc Nursing",
+                        overview: "Post Graduate Institute of Medical Education & Research Nursing"
+                    }
+                ]
+            },
+            paramedical: {
+                name: "Paramedical Sciences",
+                icon: "🩺",
+                description: "Allied health sciences and diagnostics",
+                bgColor: "var(--color-bg-6)",
+                exams: [
+                    {
+                        name: "AIIMS Paramedical",
+                        duration: "5 months",
+                        difficulty: "Medium-High",
+                        subjects: ["Physics", "Chemistry", "Biology", "General Knowledge"],
+                        eligibility: "12th Pass with PCB",
+                        overview: "AIIMS Paramedical Courses Entrance Examination"
+                    },
+                    {
+                        name: "JIPMER Paramedical",
+                        duration: "5 months",
+                        difficulty: "Medium-High",
+                        subjects: ["Physics", "Chemistry", "Biology"],
+                        eligibility: "12th Pass with PCB",
+                        overview: "JIPMER Paramedical Courses Entrance"
+                    },
+                    {
+                        name: "NEET Allied Health",
+                        duration: "4 months",
+                        difficulty: "Medium",
+                        subjects: ["Physics", "Chemistry", "Biology"],
+                        eligibility: "12th Pass with PCB",
+                        overview: "NEET for Allied Health Sciences Courses"
+                    }
+                ]
+            },
+            forest_service: {
+                name: "Forest Services",
+                icon: "🌲",
+                description: "Forest conservation and wildlife management",
+                bgColor: "var(--color-bg-3)",
+                exams: [
+                    {
+                        name: "Indian Forest Service",
+                        duration: "18 months",
+                        difficulty: "Very High",
+                        subjects: ["General Studies", "Forestry Optional", "Essay", "English"],
+                        eligibility: "Graduation (21-32 years)",
+                        overview: "UPSC Indian Forest Service Examination",
+                        preparation_strategy: {
+                            phase1: "Foundation (Months 1-6): Basic forestry, environmental studies",
+                            phase2: "Detailed Study (Months 7-12): Advanced forestry, GS preparation",
+                            phase3: "Answer Writing (Months 13-15): Mock tests, answer practice",
+                            phase4: "Final Preparation (Months 16-18): Revision, interview prep"
+                        }
+                    },
+                    {
+                        name: "State Forest Service",
+                        duration: "12 months",
+                        difficulty: "High",
+                        subjects: ["General Studies", "Forestry", "Environmental Science"],
+                        eligibility: "Graduation in Forestry/Science",
+                        overview: "State Forest Services Examinations"
+                    },
+                    {
+                        name: "Forest Range Officer",
+                        duration: "8 months",
+                        difficulty: "Medium-High",
+                        subjects: ["General Knowledge", "Reasoning", "Quantitative Aptitude", "Environmental Science"],
+                        eligibility: "Graduation",
+                        overview: "Forest Range Officer Recruitment Exam"
+                    }
+                ]
+            },
+            police_service: {
+                name: "Police Services",
+                icon: "👮‍♂️",
+                description: "Police administration and law enforcement",
+                bgColor: "var(--color-bg-7)",
+                exams: [
+                    {
+                        name: "UPSC CAPF",
+                        duration: "12 months",
+                        difficulty: "High",
+                        subjects: ["General Ability & Intelligence", "General Studies", "Essay"],
+                        eligibility: "Graduation (20-25 years)",
+                        overview: "Central Armed Police Forces (Assistant Commandant)",
+                        study_plan: {
+                            daily_hours: "8-10 hours",
+                            general_studies: "4 hours",
+                            reasoning: "2 hours",
+                            current_affairs: "2 hours"
+                        }
+                    },
+                    {
+                        name: "State Police Constable",
+                        duration: "6 months",
+                        difficulty: "Medium",
+                        subjects: ["General Knowledge", "Reasoning", "Numerical Ability", "Hindi/English"],
+                        eligibility: "12th Pass",
+                        overview: "State Police Constable Recruitment"
+                    },
+                    {
+                        name: "State Police SI",
+                        duration: "8 months",
+                        difficulty: "Medium-High",
+                        subjects: ["General Studies", "Law", "Reasoning", "Quantitative Aptitude"],
+                        eligibility: "Graduation",
+                        overview: "State Police Sub-Inspector Recruitment"
+                    }
+                ]
+            },
+            agriculture: {
+                name: "Agriculture Exams",
+                icon: "🌾",
+                description: "ICAR JRF, AIEEA",
+                bgColor: "var(--color-bg-2)",
+                exams: [
+                    {
+                        name: "ICAR JRF",
+                        duration: "8 months",
+                        difficulty: "High",
+                        subjects: ["Agriculture", "Subject Specific"],
+                        attempts_per_year: 1,
+                        eligibility: "Master's degree in Agriculture",
+                        overview: "Junior Research Fellowship in Agriculture",
+                        preparation_strategy: {
+                            phase1: "Basic Concepts (Months 1-2): Fundamental agriculture subjects",
+                            phase2: "Advanced Study (Months 3-5): Specialized subjects, research methodology",
+                            phase3: "Practice Phase (Months 6-7): Mock tests, previous papers",
+                            phase4: "Final Revision (Month 8): Quick revision, current developments"
+                        },
+                        success_tips: [
+                            "Strong foundation in basic agriculture subjects",
+                            "Stay updated with latest research",
+                            "Focus on your specialization subject",
+                            "Practice numerical problems regularly"
+                        ]
+                    },
+                    {
+                        name: "ICAR AIEEA PG",
+                        duration: "6 months",
+                        difficulty: "Medium-High",
+                        subjects: ["Agriculture subjects based on specialization"],
+                        overview: "All India Entrance Exam for Agriculture PG courses"
+                    }
+                ]
+            }
+        };
+
+        // Enhanced exam statistics for better insights
+        const examStats = {
+            totalExams: 78,
+            totalCategories: 18,
+            averagePreparationTime: "8.5 months",
+            successRate: "12.3%",
+            popularCategories: ["Engineering", "Medical", "Government", "Banking", "Management"]
+        };
+
+        // Global variables
+        let currentExam = null;
+        let bookmarkedExams = new Set();
+        let examProgress = {};
+        let currentTheme = 'light';
+
+        // Initialize the application
+        function init() {
+            renderCategories();
+            loadBookmarks();
+            loadProgress();
+            loadTheme();
+        }
+
+        // Render category cards
+        function renderCategories() {
+            const grid = document.getElementById('categoryGrid');
+            grid.innerHTML = '';
+
+            Object.keys(examData).forEach(categoryKey => {
+                const category = examData[categoryKey];
+                const examCount = category.exams.length;
+
+                const card = document.createElement('div');
+                card.className = 'category-card';
+                card.style.background = category.bgColor;
+                card.onclick = () => showCategoryExams(categoryKey);
+
+                card.innerHTML = `
+                    <div class="category-header">
+                        <span class="category-icon">${category.icon}</span>
+                        <div>
+                            <h3>${category.name}</h3>
+                            <p class="category-description">${category.description}</p>
+                            <span class="exam-count">${examCount} Exams</span>
+                        </div>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        // Show exams in a category
+        function showCategoryExams(categoryKey) {
+            const category = examData[categoryKey];
+            const grid = document.getElementById('categoryGrid');
+            grid.innerHTML = '';
+
+            // Add back button
+            const backBtn = document.createElement('div');
+            backBtn.className = 'category-card';
+            backBtn.style.background = 'var(--color-secondary)';
+            backBtn.onclick = () => renderCategories();
+            backBtn.innerHTML = `
+                <div class="category-header">
+                    <span class="category-icon">←</span>
+                    <div>
+                        <h3>Back to Categories</h3>
+                        <p class="category-description">Return to main menu</p>
+                    </div>
+                </div>
+            `;
+            grid.appendChild(backBtn);
+
+            // Render exam cards
+            category.exams.forEach(exam => {
+                const card = document.createElement('div');
+                card.className = 'category-card';
+                card.style.background = category.bgColor;
+                card.onclick = () => showExamDetails(exam, categoryKey);
+
+                const difficultyClass = exam.difficulty ? exam.difficulty.toLowerCase().replace(' ', '-') : 'medium';
+                const subjects = exam.subjects ? exam.subjects.join(', ') : 'N/A';
+                const attempts = exam.attempts_per_year || 'N/A';
+
+                card.innerHTML = `
+                    <div class="category-header">
+                        <span class="category-icon">${category.icon}</span>
+                        <div>
+                            <h3>${exam.name}</h3>
+                            <p class="category-description">${exam.overview || 'Competitive examination'}</p>
+                            <div style="display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap;">
+                                <span class="difficulty-badge ${difficultyClass}">${exam.difficulty || 'Medium'}</span>
+                                <span class="exam-count">${exam.duration || '6 months'}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        // Show exam details in modal
+        function showExamDetails(exam, categoryKey) {
+            currentExam = { ...exam, category: categoryKey };
+            const modal = document.getElementById('examModal');
+            const title = document.getElementById('modalTitle');
+            const examInfo = document.getElementById('examInfo');
+
+            title.textContent = exam.name;
+
+            // Update bookmark button
+            updateBookmarkButton();
+
+            // Update progress
+            updateProgressDisplay();
+
+            // Populate exam info
+            examInfo.innerHTML = `
+                <div class="info-item">
+                    <div class="info-label">Duration</div>
+                    <div class="info-value">${exam.duration || 'N/A'}</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Difficulty</div>
+                    <div class="info-value">
+                        <span class="difficulty-badge ${(exam.difficulty || 'medium').toLowerCase().replace(' ', '-')}">
+                            ${exam.difficulty || 'Medium'}
+                        </span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Attempts per Year</div>
+                    <div class="info-value">${exam.attempts_per_year || 'N/A'}</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Eligibility</div>
+                    <div class="info-value">${exam.eligibility || 'Check official notification'}</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Subjects</div>
+                    <div class="info-value">${exam.subjects ? exam.subjects.join(', ') : 'N/A'}</div>
+                </div>
+            `;
+
+            // Update tab contents
+            updateTabContents(exam);
+
+            // Show modal
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Update tab contents
+        function updateTabContents(exam) {
+            // Overview tab
+            const overviewContent = document.getElementById('overviewContent');
+            overviewContent.innerHTML = `
+                <h3>📋 About ${exam.name}</h3>
+                <p>${exam.overview || 'This is a competitive examination for admission to various institutions.'}</p>
+                ${exam.key_dates ? `
+                    <h4>🗓️ Important Dates</h4>
+                    <ul class="tips-list">
+                        ${exam.key_dates.map(date => `<li>${date}</li>`).join('')}
+                    </ul>
+                ` : ''}
+                ${exam.note ? `<div style="background: var(--color-bg-2); padding: 16px; border-radius: 8px; margin-top: 16px;"><strong>Note:</strong> ${exam.note}</div>` : ''}
+            `;
+
+            // Roadmap tab
+            const roadmapContent = document.getElementById('roadmapContent');
+            if (exam.preparation_strategy) {
+                const phases = Object.entries(exam.preparation_strategy);
+                roadmapContent.innerHTML = `
+                    <h3>🗺️ Preparation Roadmap</h3>
+                    ${phases.map((phase, index) => `
+                        <div class="roadmap-phase">
+                            <div class="phase-title">
+                                <div class="phase-number">${index + 1}</div>
+                                ${phase[1].split(':')[0]}
+                            </div>
+                            <p>${phase[1].split(':')[1] || phase[1]}</p>
+                        </div>
+                    `).join('')}
+                    ${exam.study_plan ? `
+                        <div class="roadmap-phase">
+                            <h4>📅 Daily Study Schedule</h4>
+                            <ul class="tips-list">
+                                ${Object.entries(exam.study_plan).map(([key, value]) => `<li><strong>${key.replace('_', ' ').toUpperCase()}:</strong> ${value}</li>`).join('')}
+                            </ul>
+                        </div>
+                    ` : ''}
+                `;
+            } else {
+                roadmapContent.innerHTML = `
+                    <h3>🗺️ Preparation Roadmap</h3>
+                    <div class="roadmap-phase">
+                        <div class="phase-title">
+                            <div class="phase-number">1</div>
+                            Foundation Phase
+                        </div>
+                        <p>Build strong fundamentals in all subjects. Focus on NCERT/basic books.</p>
+                    </div>
+                    <div class="roadmap-phase">
+                        <div class="phase-title">
+                            <div class="phase-number">2</div>
+                            Practice Phase
+                        </div>
+                        <p>Solve previous year papers and take mock tests regularly.</p>
+                    </div>
+                    <div class="roadmap-phase">
+                        <div class="phase-title">
+                            <div class="phase-number">3</div>
+                            Revision Phase
+                        </div>
+                        <p>Quick revision and final preparation before exam.</p>
+                    </div>
+                `;
+            }
+
+            // Resources tab
+            const resourcesContent = document.getElementById('resourcesContent');
+            if (exam.resources) {
+                resourcesContent.innerHTML = `
+                    <h3>📚 Study Resources</h3>
+                    ${exam.resources.books ? `
+                        <h4>📖 Recommended Books</h4>
+                        <ul class="tips-list">
+                            ${exam.resources.books.map(book => `<li>${book}</li>`).join('')}
+                        </ul>
+                    ` : ''}
+                    ${exam.resources.online ? `
+                        <h4>💻 Online Platforms</h4>
+                        <ul class="tips-list">
+                            ${exam.resources.online.map(platform => `<li>${platform}</li>`).join('')}
+                        </ul>
+                    ` : ''}
+                    <h4>🌐 General Resources</h4>
+                    <ul class="tips-list">
+                        <li>Previous year question papers</li>
+                        <li>Mock test series</li>
+                        <li>Current affairs magazines</li>
+                        <li>Online video lectures</li>
+                        <li>Study group discussions</li>
+                    </ul>
+                `;
+            } else {
+                resourcesContent.innerHTML = `
+                    <h3>📚 Study Resources</h3>
+                    <h4>🌐 General Resources</h4>
+                    <ul class="tips-list">
+                        <li>NCERT textbooks for fundamentals</li>
+                        <li>Previous year question papers</li>
+                        <li>Mock test series</li>
+                        <li>Current affairs magazines</li>
+                        <li>Online video lectures</li>
+                        <li>Reference books by standard authors</li>
+                    </ul>
+                `;
+            }
+
+            // Tips tab
+            const tipsContent = document.getElementById('tipsContent');
+            if (exam.success_tips) {
+                tipsContent.innerHTML = `
+                    <h3>💡 Success Tips</h3>
+                    <ul class="tips-list">
+                        ${exam.success_tips.map(tip => `<li>${tip}</li>`).join('')}
+                    </ul>
+                `;
+            } else {
+                tipsContent.innerHTML = `
+                    <h3>💡 Success Tips</h3>
+                    <ul class="tips-list">
+                        <li>Start preparation early and be consistent</li>
+                        <li>Create a realistic study schedule</li>
+                        <li>Focus on understanding concepts rather than memorizing</li>
+                        <li>Practice regularly and analyze mistakes</li>
+                        <li>Take mock tests to improve time management</li>
+                        <li>Stay updated with current affairs</li>
+                        <li>Maintain physical and mental health</li>
+                        <li>Stay motivated and positive</li>
+                    </ul>
+                `;
+            }
+        }
+
+        // Switch tabs
+        function switchTab(tabName) {
+            // Update tab buttons
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update tab content
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(tabName).classList.add('active');
+        }
+
+        // Close modal
+        function closeModal() {
+            const modal = document.getElementById('examModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            currentExam = null;
+        }
+
+        // Toggle bookmark
+        function toggleBookmark() {
+            if (!currentExam) return;
+
+            const examKey = `${currentExam.category}-${currentExam.name}`;
+            
+            if (bookmarkedExams.has(examKey)) {
+                bookmarkedExams.delete(examKey);
+            } else {
+                bookmarkedExams.add(examKey);
+            }
+
+            updateBookmarkButton();
+            saveBookmarks();
+        }
+
+        // Update bookmark button
+        function updateBookmarkButton() {
+            if (!currentExam) return;
+
+            const examKey = `${currentExam.category}-${currentExam.name}`;
+            const bookmarkBtn = document.getElementById('bookmarkBtn');
+            const bookmarkIcon = document.getElementById('bookmarkIcon');
+
+            if (bookmarkedExams.has(examKey)) {
+                bookmarkBtn.classList.add('bookmarked');
+                bookmarkIcon.className = 'fas fa-bookmark';
+            } else {
+                bookmarkBtn.classList.remove('bookmarked');
+                bookmarkIcon.className = 'far fa-bookmark';
+            }
+        }
+
+        // Update progress
+        function updateProgress(increment) {
+            if (!currentExam) return;
+
+            const examKey = `${currentExam.category}-${currentExam.name}`;
+            
+            if (!examProgress[examKey]) {
+                examProgress[examKey] = 0;
+            }
+
+            examProgress[examKey] = Math.min(100, examProgress[examKey] + increment);
+            updateProgressDisplay();
+            saveProgress();
+        }
+
+        // Reset progress
+        function resetProgress() {
+            if (!currentExam) return;
+
+            const examKey = `${currentExam.category}-${currentExam.name}`;
+            examProgress[examKey] = 0;
+            updateProgressDisplay();
+            saveProgress();
+        }
+
+        // Update progress display
+        function updateProgressDisplay() {
+            if (!currentExam) return;
+
+            const examKey = `${currentExam.category}-${currentExam.name}`;
+            const progress = examProgress[examKey] || 0;
+            
+            document.getElementById('progressPercent').textContent = `${progress}%`;
+            document.getElementById('progressFill').style.width = `${progress}%`;
+        }
+
+        // Search exams
+        function searchExams() {
+            const searchTerm = document.getElementById('examSearch').value.toLowerCase();
+            const grid = document.getElementById('categoryGrid');
+            
+            if (!searchTerm) {
+                renderCategories();
+                return;
+            }
+
+            grid.innerHTML = '';
+
+            // Search through all exams
+            Object.keys(examData).forEach(categoryKey => {
+                const category = examData[categoryKey];
+                
+                category.exams.forEach(exam => {
+                    if (exam.name.toLowerCase().includes(searchTerm) ||
+                        (exam.subjects && exam.subjects.some(subject => subject.toLowerCase().includes(searchTerm))) ||
+                        (exam.overview && exam.overview.toLowerCase().includes(searchTerm))) {
+                        
+                        const card = document.createElement('div');
+                        card.className = 'category-card';
+                        card.style.background = category.bgColor;
+                        card.onclick = () => showExamDetails(exam, categoryKey);
+
+                        const difficultyClass = exam.difficulty ? exam.difficulty.toLowerCase().replace(' ', '-') : 'medium';
+
+                        card.innerHTML = `
+                            <div class="category-header">
+                                <span class="category-icon">${category.icon}</span>
+                                <div>
+                                    <h3>${exam.name}</h3>
+                                    <p class="category-description">${exam.overview || 'Competitive examination'}</p>
+                                    <div style="display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap;">
+                                        <span class="difficulty-badge ${difficultyClass}">${exam.difficulty || 'Medium'}</span>
+                                        <span class="exam-count">${exam.duration || '6 months'}</span>
+                                        <span class="exam-count">${category.name}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+
+                        grid.appendChild(card);
+                    }
+                });
+            });
+
+            // Add back button
+            const backBtn = document.createElement('div');
+            backBtn.className = 'category-card';
+            backBtn.style.background = 'var(--color-secondary)';
+            backBtn.onclick = () => {
+                document.getElementById('examSearch').value = '';
+                renderCategories();
+            };
+            backBtn.innerHTML = `
+                <div class="category-header">
+                    <span class="category-icon">🏠</span>
+                    <div>
+                        <h3>Back to Home</h3>
+                        <p class="category-description">Clear search and return to categories</p>
+                    </div>
+                </div>
+            `;
+            grid.insertBefore(backBtn, grid.firstChild);
+        }
+
+        // Filter by category
+        function filterByCategory(categoryKey) {
+            // Update active filter tag
+            document.querySelectorAll('.filter-tag').forEach(tag => {
+                tag.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Clear search
+            document.getElementById('examSearch').value = '';
+
+            if (categoryKey === 'all') {
+                renderCategories();
+            } else {
+                showCategoryExams(categoryKey);
+            }
+        }
+
+        // Show bookmarked exams
+        function showBookmarks() {
+            const grid = document.getElementById('categoryGrid');
+            grid.innerHTML = '';
+
+            if (bookmarkedExams.size === 0) {
+                grid.innerHTML = `
+                    <div class="category-card" style="text-align: center; background: var(--color-bg-4);">
+                        <div class="category-header">
+                            <span class="category-icon">📭</span>
+                            <div>
+                                <h3>No Bookmarks Yet</h3>
+                                <p class="category-description">Start bookmarking exams to see them here!</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            // Add back button
+            const backBtn = document.createElement('div');
+            backBtn.className = 'category-card';
+            backBtn.style.background = 'var(--color-secondary)';
+            backBtn.onclick = () => renderCategories();
+            backBtn.innerHTML = `
+                <div class="category-header">
+                    <span class="category-icon">←</span>
+                    <div>
+                        <h3>Back to Categories</h3>
+                        <p class="category-description">Return to main menu</p>
+                    </div>
+                </div>
+            `;
+            grid.appendChild(backBtn);
+
+            // Show bookmarked exams
+            bookmarkedExams.forEach(examKey => {
+                const [categoryKey, examName] = examKey.split('-');
+                const category = examData[categoryKey];
+                const exam = category.exams.find(e => e.name === examName);
+
+                if (exam) {
+                    const card = document.createElement('div');
+                    card.className = 'category-card';
+                    card.style.background = category.bgColor;
+                    card.onclick = () => showExamDetails(exam, categoryKey);
+
+                    const difficultyClass = exam.difficulty ? exam.difficulty.toLowerCase().replace(' ', '-') : 'medium';
+                    const progress = examProgress[examKey] || 0;
+
+                    card.innerHTML = `
+                        <div class="category-header">
+                            <span class="category-icon">${category.icon}</span>
+                            <div>
+                                <h3>${exam.name} ⭐</h3>
+                                <p class="category-description">${exam.overview || 'Competitive examination'}</p>
+                                <div style="display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; align-items: center;">
+                                    <span class="difficulty-badge ${difficultyClass}">${exam.difficulty || 'Medium'}</span>
+                                    <span class="exam-count">${exam.duration || '6 months'}</span>
+                                    <span class="exam-count">${progress}% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+
+                    grid.appendChild(card);
+                }
+            });
+        }
+
+        // Toggle theme
+        function toggleTheme() {
+            currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+            document.body.setAttribute('data-theme', currentTheme);
+            document.getElementById('theme-icon').className = currentTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+            saveTheme();
+        }
+
+        // Save data to memory
+        function saveBookmarks() {
+            // In a real app, this would save to localStorage
+            // For demo purposes, we're keeping it in memory
+        }
+
+        function loadBookmarks() {
+            // In a real app, this would load from localStorage
+            // For demo purposes, we're keeping it empty
+        }
+
+        function saveProgress() {
+            // In a real app, this would save to localStorage
+            // For demo purposes, we're keeping it in memory
+        }
+
+        function loadProgress() {
+            // In a real app, this would load from localStorage
+            // For demo purposes, we're keeping it empty
+        }
+
+        function saveTheme() {
+            // In a real app, this would save to localStorage
+            // For demo purposes, we're keeping it in memory
+        }
+
+        function loadTheme() {
+            // In a real app, this would load from localStorage
+            // For demo purposes, we're using light theme by default
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('examModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && document.getElementById('examModal').classList.contains('active')) {
+                closeModal();
+            }
+        });
+
+        // Enhanced Features Variables
+        let comparisonList = [];
+        let studyStreak = Math.floor(Math.random() * 30) + 1; // Random initial streak
+        let studyCalendarData = {};
+        let currentFilters = {};
+        let userProfile = {
+            interests: [],
+            preparationLevel: 'beginner',
+            targetExams: [],
+            studyHours: 6
+        };
+        let notifications = [];
+
+        // Advanced Search Functions
+        function toggleAdvancedSearch() {
+            const searchDiv = document.getElementById('advancedSearch');
+            searchDiv.classList.toggle('active');
+        }
+
+        function applyAdvancedFilters() {
+            const difficulty = document.getElementById('difficultyFilter').value;
+            const duration = document.getElementById('durationFilter').value;
+            const eligibility = document.getElementById('eligibilityFilter').value;
+            const success = document.getElementById('successFilter').value;
+
+            currentFilters = { difficulty, duration, eligibility, success };
+            filterExamsAdvanced();
+        }
+
+        function clearAdvancedFilters() {
+            document.getElementById('difficultyFilter').value = '';
+            document.getElementById('durationFilter').value = '';
+            document.getElementById('eligibilityFilter').value = '';
+            document.getElementById('successFilter').value = '';
+            currentFilters = {};
+            renderCategories();
+        }
+
+        function filterExamsAdvanced() {
+            const grid = document.getElementById('categoryGrid');
+            grid.innerHTML = '';
+
+            // Add back button
+            const backBtn = document.createElement('div');
+            backBtn.className = 'category-card';
+            backBtn.style.background = 'var(--color-secondary)';
+            backBtn.onclick = () => {
+                clearAdvancedFilters();
+                renderCategories();
+            };
+            backBtn.innerHTML = `
+                <div class="category-header">
+                    <span class="category-icon">🏠</span>
+                    <div>
+                        <h3>Back to Categories</h3>
+                        <p class="category-description">Clear filters and return</p>
+                    </div>
+                </div>
+            `;
+            grid.appendChild(backBtn);
+
+            // Filter and show matching exams
+            Object.keys(examData).forEach(categoryKey => {
+                const category = examData[categoryKey];
+                
+                category.exams.forEach(exam => {
+                    if (matchesFilters(exam)) {
+                        const card = createExamCard(exam, category, categoryKey);
+                        grid.appendChild(card);
+                    }
+                });
+            });
+        }
+
+        function matchesFilters(exam) {
+            const { difficulty, duration, eligibility, success } = currentFilters;
+            
+            if (difficulty && exam.difficulty && !exam.difficulty.toLowerCase().includes(difficulty.replace('-', ' '))) {
+                return false;
+            }
+            
+            if (duration) {
+                const months = parseInt(exam.duration) || 6;
+                if (duration === 'short' && months > 6) return false;
+                if (duration === 'medium' && (months <= 6 || months > 12)) return false;
+                if (duration === 'long' && months <= 12) return false;
+            }
+            
+            if (eligibility) {
+                const examEligibility = exam.eligibility || '';
+                if (eligibility === '12th' && !examEligibility.toLowerCase().includes('12th')) return false;
+                if (eligibility === 'graduation' && !examEligibility.toLowerCase().includes('graduat')) return false;
+            }
+            
+            return true;
+        }
+
+        function createExamCard(exam, category, categoryKey) {
+            const card = document.createElement('div');
+            card.className = 'category-card';
+            card.style.background = category.bgColor;
+            card.onclick = () => showExamDetails(exam, categoryKey);
+
+            const difficultyClass = exam.difficulty ? exam.difficulty.toLowerCase().replace(' ', '-') : 'medium';
+
+            card.innerHTML = `
+                <div class="category-header">
+                    <span class="category-icon">${category.icon}</span>
+                    <div>
+                        <h3>${exam.name}</h3>
+                        <p class="category-description">${exam.overview || 'Competitive examination'}</p>
+                        <div style="display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap;">
+                            <span class="difficulty-badge ${difficultyClass}">${exam.difficulty || 'Medium'}</span>
+                            <span class="exam-count">${exam.duration || '6 months'}</span>
+                            <span class="exam-count">${category.name}</span>
+                            <button class="btn" style="font-size: 12px; padding: 4px 8px; margin-left: auto;" onclick="event.stopPropagation(); addToComparison('${exam.name}', '${categoryKey}')">
+                                + Compare
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            return card;
+        }
+
+        // Comparison Tool Functions
+        function toggleComparison() {
+            const compTool = document.getElementById('comparisonTool');
+            compTool.style.display = compTool.style.display === 'none' ? 'block' : 'none';
+            updateComparisonView();
+        }
+
+        function addToComparison(examName, categoryKey) {
+            const examKey = `${categoryKey}-${examName}`;
+            
+            if (comparisonList.length >= 3) {
+                alert('You can compare maximum 3 exams at a time');
+                return;
+            }
+            
+            if (comparisonList.some(item => item.key === examKey)) {
+                alert('This exam is already in comparison');
+                return;
+            }
+            
+            const category = examData[categoryKey];
+            const exam = category.exams.find(e => e.name === examName);
+            
+            if (exam) {
+                comparisonList.push({ key: examKey, exam, category, categoryKey });
+                updateComparisonView();
+                
+                // Show comparison tool
+                document.getElementById('comparisonTool').style.display = 'block';
+            }
+        }
+
+        function removeFromComparison(examKey) {
+            comparisonList = comparisonList.filter(item => item.key !== examKey);
+            updateComparisonView();
+        }
+
+        function updateComparisonView() {
+            const grid = document.getElementById('comparisonGrid');
+            grid.innerHTML = '';
+            
+            comparisonList.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'compare-card selected';
+                card.innerHTML = `
+                    <button class="compare-remove" onclick="removeFromComparison('${item.key}')">&times;</button>
+                    <h4>${item.exam.name}</h4>
+                    <p><strong>Category:</strong> ${item.category.name}</p>
+                    <p><strong>Duration:</strong> ${item.exam.duration || 'N/A'}</p>
+                    <p><strong>Difficulty:</strong> ${item.exam.difficulty || 'Medium'}</p>
+                    <p><strong>Eligibility:</strong> ${item.exam.eligibility || 'Check notification'}</p>
+                    <p><strong>Subjects:</strong> ${item.exam.subjects ? item.exam.subjects.slice(0, 2).join(', ') + (item.exam.subjects.length > 2 ? '...' : '') : 'N/A'}</p>
+                    <button class="btn" onclick="showExamDetails(item.exam, item.categoryKey)" style="width: 100%; margin-top: 12px;">View Details</button>
+                `;
+                grid.appendChild(card);
+            });
+            
+            if (comparisonList.length === 0) {
+                grid.innerHTML = '<p style="text-align: center; color: var(--color-text-secondary);">No exams selected for comparison. Click "+ Compare" on any exam card to add it here.</p>';
+            }
+        }
+
+        function clearComparison() {
+            comparisonList = [];
+            updateComparisonView();
+        }
+
+        // Recommendations Functions
+        function toggleRecommendations() {
+            const recDiv = document.getElementById('recommendations');
+            recDiv.style.display = recDiv.style.display === 'none' ? 'block' : 'none';
+            if (recDiv.style.display === 'block') {
+                generateRecommendations();
+            }
+        }
+
+        function generateRecommendations() {
+            const recList = document.getElementById('recommendationsList');
+            
+            // Dynamic recommendations based on user activity
+            let recommendations = [];
+            
+            if (bookmarkedExams.size > 0) {
+                recommendations.push({
+                    icon: '📚',
+                    title: 'Continue Your Journey',
+                    description: `You have ${bookmarkedExams.size} bookmarked exams. Focus on one to make progress!`,
+                    action: () => showBookmarks()
+                });
+            }
+            
+            if (Object.keys(examProgress).length > 0) {
+                const avgProgress = Object.values(examProgress).reduce((a, b) => a + b, 0) / Object.values(examProgress).length;
+                if (avgProgress < 50) {
+                    recommendations.push({
+                        icon: '⚡',
+                        title: 'Boost Your Progress',
+                        description: `Current average progress: ${Math.round(avgProgress)}%. Let's improve it!`,
+                        action: () => toggleStudyPlanner()
+                    });
+                }
+            }
+            
+            // Add general recommendations
+            const generalRecs = [
+                {
+                    icon: '🎯',
+                    title: 'Trending Now',
+                    description: 'NEET 2025 - Early preparation gives 300% better results',
+                    action: () => {
+                        const medical = examData.medical.exams.find(e => e.name === 'NEET-UG');
+                        showExamDetails(medical, 'medical');
+                    }
+                },
+                {
+                    icon: '⭐',
+                    title: 'Most Popular',
+                    description: 'JEE Main - Join 2M+ students preparation',
+                    action: () => showCategoryExams('engineering')
+                },
+                {
+                    icon: '💼',
+                    title: 'High Salary Potential',
+                    description: 'UPSC CSE - Build your civil services career',
+                    action: () => showCategoryExams('government')
+                },
+                {
+                    icon: '🚀',
+                    title: 'Quick Results',
+                    description: 'Banking PO - Get job within 1 year of preparation',
+                    action: () => showCategoryExams('banking')
+                },
+                {
+                    icon: '🎨',
+                    title: 'Creative Careers',
+                    description: 'NIFT/NID - Express your creativity professionally',
+                    action: () => showCategoryExams('fashion_design')
+                },
+                {
+                    icon: '⚖️',
+                    title: 'Serve Justice',
+                    description: 'Judicial Services - Be a pillar of justice system',
+                    action: () => showCategoryExams('judicial')
+                }
+            ];
+            
+            // Combine personal and general recommendations
+            recommendations = [...recommendations, ...generalRecs.slice(0, 6 - recommendations.length)];
+            
+            recList.innerHTML = recommendations.map(rec => `
+                <div class="recommendation-card" onclick="rec.action ? rec.action() : null" style="cursor: pointer;">
+                    <span class="recommendation-icon">${rec.icon}</span>
+                    <div>
+                        <h4 style="margin: 0 0 4px 0;">${rec.title}</h4>
+                        <p style="margin: 0; color: var(--color-text-secondary); font-size: 14px;">${rec.description}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Analytics Functions
+        function toggleAnalytics() {
+            const analyticsDiv = document.getElementById('analytics');
+            analyticsDiv.style.display = analyticsDiv.style.display === 'none' ? 'block' : 'none';
+            if (analyticsDiv.style.display === 'block') {
+                updateAnalytics();
+            }
+        }
+
+        function updateAnalytics() {
+            document.getElementById('studyStreak').textContent = studyStreak;
+            document.getElementById('totalBookmarks').textContent = bookmarkedExams.size;
+            
+            // Calculate average progress
+            const progressValues = Object.values(examProgress);
+            const avgProgress = progressValues.length > 0 ? 
+                Math.round(progressValues.reduce((a, b) => a + b, 0) / progressValues.length) : 0;
+            document.getElementById('avgProgress').textContent = avgProgress + '%';
+            
+            // Count completed milestones (progress >= 100%)
+            const completedCount = progressValues.filter(p => p >= 100).length;
+            document.getElementById('completedMilestones').textContent = completedCount;
+        }
+
+        // Success Stories Functions
+        function toggleSuccessStories() {
+            const storiesDiv = document.getElementById('successStories');
+            storiesDiv.style.display = storiesDiv.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Study Planner Functions
+        function toggleStudyPlanner() {
+            const plannerDiv = document.getElementById('studyPlanner');
+            plannerDiv.style.display = plannerDiv.style.display === 'none' ? 'block' : 'none';
+            if (plannerDiv.style.display === 'block') {
+                generateCalendar();
+            }
+        }
+
+        function generateCalendar() {
+            const calendar = document.getElementById('studyCalendar');
+            const today = new Date();
+            const daysInMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0).getDate();
+            
+            calendar.innerHTML = '';
+            
+            // Add day headers
+            ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].forEach(day => {
+                const dayHeader = document.createElement('div');
+                dayHeader.style.fontWeight = 'bold';
+                dayHeader.style.textAlign = 'center';
+                dayHeader.style.padding = '8px';
+                dayHeader.textContent = day;
+                calendar.appendChild(dayHeader);
+            });
+            
+            // Add calendar days
+            for (let day = 1; day <= daysInMonth; day++) {
+                const dayDiv = document.createElement('div');
+                dayDiv.className = 'calendar-day';
+                dayDiv.textContent = day;
+                
+                const dateKey = `${today.getFullYear()}-${today.getMonth() + 1}-${day}`;
+                
+                if (day === today.getDate()) {
+                    dayDiv.classList.add('today');
+                }
+                
+                if (studyCalendarData[dateKey]) {
+                    dayDiv.classList.add('has-study');
+                }
+                
+                dayDiv.onclick = () => toggleStudyDay(dateKey, dayDiv);
+                calendar.appendChild(dayDiv);
+            }
+        }
+
+        function toggleStudyDay(dateKey, dayElement) {
+            if (studyCalendarData[dateKey]) {
+                delete studyCalendarData[dateKey];
+                dayElement.classList.remove('has-study');
+            } else {
+                studyCalendarData[dateKey] = true;
+                dayElement.classList.add('has-study');
+            }
+        }
+
+        function markStudyDay() {
+            const today = new Date();
+            const dateKey = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
+            
+            if (!studyCalendarData[dateKey]) {
+                studyCalendarData[dateKey] = true;
+                studyStreak++;
+                
+                // Show achievement
+                showAchievement('Study day completed! 🎉');
+                generateCalendar();
+            }
+        }
+
+        function generateStudyPlan() {
+            alert('🎯 AI Study Plan Generated!\n\n• Morning: Focus subjects (2-3 hours)\n• Afternoon: Practice tests (1-2 hours)\n• Evening: Revision & notes (1 hour)\n• Night: Light reading (30 minutes)');
+        }
+
+        function showAchievement(message) {
+            const achievement = document.createElement('div');
+            achievement.className = 'achievement-badge';
+            achievement.innerHTML = `<i class="fas fa-star"></i> ${message}`;
+            achievement.style.position = 'fixed';
+            achievement.style.top = '20px';
+            achievement.style.left = '50%';
+            achievement.style.transform = 'translateX(-50%)';
+            achievement.style.zIndex = '2000';
+            
+            document.body.appendChild(achievement);
+            
+            setTimeout(() => {
+                achievement.remove();
+            }, 3000);
+        }
+
+        // Enhanced User Experience Features
+        function createNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `notification notification-${type}`;
+            notification.innerHTML = `
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <i class="fas ${type === 'success' ? 'fa-check-circle' : type === 'warning' ? 'fa-exclamation-triangle' : 'fa-info-circle'}"></i>
+                    <span>${message}</span>
+                    <button onclick="this.parentElement.parentElement.remove()" style="background: none; border: none; color: inherit; font-size: 18px; cursor: pointer; margin-left: auto;">&times;</button>
+                </div>
+            `;
+            
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: var(--color-surface);
+                border: 1px solid var(--color-card-border);
+                border-left: 4px solid var(${type === 'success' ? '--color-success' : type === 'warning' ? '--color-warning' : '--color-info'});
+                border-radius: var(--radius-md);
+                padding: 16px;
+                box-shadow: var(--shadow-lg);
+                z-index: 2001;
+                min-width: 300px;
+                animation: slideInRight 0.3s ease;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                if (notification.parentElement) {
+                    notification.remove();
+                }
+            }, 5000);
+        }
+
+        // Smart Study Reminder System
+        function initializeStudyReminders() {
+            const now = new Date();
+            const hour = now.getHours();
+            
+            // Morning reminder
+            if (hour >= 6 && hour <= 9) {
+                setTimeout(() => {
+                    createNotification('🌅 Good morning! Start your day with focused study session.', 'info');
+                }, 2000);
+            }
+            
+            // Evening reminder
+            if (hour >= 18 && hour <= 21) {
+                setTimeout(() => {
+                    createNotification('🌆 Evening study time! Review today\'s concepts.', 'info');
+                }, 3000);
+            }
+        }
+
+        // Advanced Progress Tracking
+        function calculateDetailedProgress() {
+            const progressData = {
+                totalExams: Object.keys(examProgress).length,
+                completedExams: Object.values(examProgress).filter(p => p >= 100).length,
+                inProgressExams: Object.values(examProgress).filter(p => p > 0 && p < 100).length,
+                averageProgress: Object.values(examProgress).length > 0 ? 
+                    Math.round(Object.values(examProgress).reduce((a, b) => a + b, 0) / Object.values(examProgress).length) : 0,
+                totalStudyHours: studyStreak * userProfile.studyHours,
+                weeklyGoal: userProfile.studyHours * 7
+            };
+            
+            return progressData;
+        }
+
+        // Intelligent Exam Suggestions
+        function getPersonalizedSuggestions() {
+            const suggestions = [];
+            const userInterests = userProfile.interests;
+            const currentProgress = calculateDetailedProgress();
+            
+            // Suggest based on current progress
+            if (currentProgress.averageProgress > 80) {
+                suggestions.push({
+                    type: 'achievement',
+                    message: 'You\'re doing great! Consider adding another exam to your list.',
+                    action: () => renderCategories()
+                });
+            } else if (currentProgress.averageProgress < 30) {
+                suggestions.push({
+                    type: 'motivation',
+                    message: 'Focus on one exam at a time. Consistency is key!',
+                    action: () => showBookmarks()
+                });
+            }
+            
+            // Suggest popular combinations
+            if (bookmarkedExams.has('engineering-JEE Main')) {
+                suggestions.push({
+                    type: 'combo',
+                    message: 'Since you\'re preparing for JEE Main, consider JEE Advanced too!',
+                    action: () => {
+                        const jeeAdv = examData.engineering.exams.find(e => e.name === 'JEE Advanced');
+                        showExamDetails(jeeAdv, 'engineering');
+                    }
+                });
+            }
+            
+            return suggestions;
+        }
+
+        // Interactive Tutorial System
+        function startTour() {
+            const steps = [
+                {
+                    element: '.search-bar',
+                    message: 'Start by searching for any competitive exam here!',
+                    position: 'bottom'
+                },
+                {
+                    element: '.filter-tags',
+                    message: 'Use these filters to quickly find exams by category.',
+                    position: 'bottom'
+                },
+                {
+                    element: '.category-grid',
+                    message: 'Click on any category to explore available exams.',
+                    position: 'top'
+                },
+                {
+                    element: '.floating-tools',
+                    message: 'Use these advanced tools for better exam preparation!',
+                    position: 'left'
+                },
+                {
+                    element: '.fab',
+                    message: 'Bookmark your favorite exams and track progress here.',
+                    position: 'left'
+                }
+            ];
+            
+            let currentStep = 0;
+            
+            function showStep(step) {
+                const element = document.querySelector(step.element);
+                if (!element) return;
+                
+                const tooltip = document.createElement('div');
+                tooltip.className = 'tour-tooltip';
+                tooltip.innerHTML = `
+                    <div style="background: var(--color-surface); border: 1px solid var(--color-primary); border-radius: 8px; padding: 16px; box-shadow: var(--shadow-lg); max-width: 250px;">
+                        <p style="margin: 0 0 12px 0; font-weight: 500;">${step.message}</p>
+                        <div style="display: flex; gap: 8px; justify-content: flex-end;">
+                            <button class="btn btn-secondary" onclick="endTour()" style="font-size: 12px; padding: 6px 12px;">Skip</button>
+                            <button class="btn" onclick="nextStep()" style="font-size: 12px; padding: 6px 12px;">${currentStep === steps.length - 1 ? 'Finish' : 'Next'}</button>
+                        </div>
+                    </div>
+                `;
+                
+                tooltip.style.cssText = `
+                    position: absolute;
+                    z-index: 3000;
+                    animation: fadeIn 0.3s ease;
+                `;
+                
+                document.body.appendChild(tooltip);
+                
+                // Position tooltip
+                const rect = element.getBoundingClientRect();
+                const tooltipRect = tooltip.getBoundingClientRect();
+                
+                let top, left;
+                
+                switch(step.position) {
+                    case 'bottom':
+                        top = rect.bottom + 10;
+                        left = rect.left + (rect.width - tooltipRect.width) / 2;
+                        break;
+                    case 'top':
+                        top = rect.top - tooltipRect.height - 10;
+                        left = rect.left + (rect.width - tooltipRect.width) / 2;
+                        break;
+                    case 'left':
+                        top = rect.top + (rect.height - tooltipRect.height) / 2;
+                        left = rect.left - tooltipRect.width - 10;
+                        break;
+                    case 'right':
+                        top = rect.top + (rect.height - tooltipRect.height) / 2;
+                        left = rect.right + 10;
+                        break;
+                }
+                
+                tooltip.style.top = `${Math.max(10, top)}px`;
+                tooltip.style.left = `${Math.max(10, Math.min(window.innerWidth - tooltipRect.width - 10, left))}px`;
+                
+                // Highlight element
+                element.style.outline = '3px solid var(--color-primary)';
+                element.style.outlineOffset = '2px';
+                
+                // Store references for cleanup
+                window.currentTooltip = tooltip;
+                window.currentHighlighted = element;
+            }
+            
+            window.nextStep = () => {
+                if (window.currentTooltip) window.currentTooltip.remove();
+                if (window.currentHighlighted) {
+                    window.currentHighlighted.style.outline = '';
+                    window.currentHighlighted.style.outlineOffset = '';
+                }
+                
+                currentStep++;
+                if (currentStep < steps.length) {
+                    showStep(steps[currentStep]);
+                } else {
+                    endTour();
+                }
+            };
+            
+            window.endTour = () => {
+                if (window.currentTooltip) window.currentTooltip.remove();
+                if (window.currentHighlighted) {
+                    window.currentHighlighted.style.outline = '';
+                    window.currentHighlighted.style.outlineOffset = '';
+                }
+                createNotification('Tour completed! You\'re all set to explore. 🎉', 'success');
+            };
+            
+            showStep(steps[0]);
+        }
+
+        // Enhanced Search with Auto-suggestions
+        function setupAdvancedSearch() {
+            const searchInput = document.getElementById('examSearch');
+            const suggestionsDiv = document.createElement('div');
+            suggestionsDiv.className = 'search-suggestions';
+            suggestionsDiv.style.cssText = `
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--color-surface);
+                border: 1px solid var(--color-border);
+                border-top: none;
+                border-radius: 0 0 8px 8px;
+                max-height: 200px;
+                overflow-y: auto;
+                z-index: 1000;
+                display: none;
+            `;
+            
+            searchInput.parentElement.style.position = 'relative';
+            searchInput.parentElement.appendChild(suggestionsDiv);
+            
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase();
+                if (query.length < 2) {
+                    suggestionsDiv.style.display = 'none';
+                    return;
+                }
+                
+                const suggestions = [];
+                
+                Object.keys(examData).forEach(categoryKey => {
+                    const category = examData[categoryKey];
+                    category.exams.forEach(exam => {
+                        if (exam.name.toLowerCase().includes(query) ||
+                            (exam.subjects && exam.subjects.some(s => s.toLowerCase().includes(query))) ||
+                            (exam.overview && exam.overview.toLowerCase().includes(query))) {
+                            suggestions.push({ exam, category: categoryKey, categoryName: category.name });
+                        }
+                    });
+                });
+                
+                if (suggestions.length > 0) {
+                    suggestionsDiv.innerHTML = suggestions.slice(0, 5).map(item => `
+                        <div class="suggestion-item" onclick="selectSuggestion('${item.exam.name}', '${item.category}')" 
+                             style="padding: 12px; cursor: pointer; border-bottom: 1px solid var(--color-card-border); transition: all 0.2s ease;"
+                             onmouseover="this.style.background='var(--color-bg-1)'" onmouseout="this.style.background='transparent'">
+                            <div style="font-weight: 500;">${item.exam.name}</div>
+                            <div style="font-size: 12px; color: var(--color-text-secondary);">${item.categoryName} • ${item.exam.difficulty || 'Medium'}</div>
+                        </div>
+                    `).join('');
+                    suggestionsDiv.style.display = 'block';
+                } else {
+                    suggestionsDiv.style.display = 'none';
+                }
+            });
+            
+            // Hide suggestions when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!searchInput.parentElement.contains(e.target)) {
+                    suggestionsDiv.style.display = 'none';
+                }
+            });
+        }
+        
+        function selectSuggestion(examName, categoryKey) {
+            const category = examData[categoryKey];
+            const exam = category.exams.find(e => e.name === examName);
+            if (exam) {
+                showExamDetails(exam, categoryKey);
+            }
+            document.querySelector('.search-suggestions').style.display = 'none';
+        }
+
+        // Performance Monitoring
+        function trackUserEngagement() {
+            const engagement = {
+                sessionStart: Date.now(),
+                examViews: 0,
+                categoriesExplored: new Set(),
+                featuresUsed: new Set(),
+                bookmarksAdded: 0,
+                progressUpdates: 0
+            };
+            
+            window.engagement = engagement;
+            
+            // Track page visibility
+            document.addEventListener('visibilitychange', () => {
+                if (document.hidden) {
+                    engagement.sessionEnd = Date.now();
+                    const sessionDuration = (engagement.sessionEnd - engagement.sessionStart) / 1000 / 60; // minutes
+                    if (sessionDuration > 5) {
+                        createNotification(`Great session! You spent ${Math.round(sessionDuration)} minutes exploring. 👏`, 'success');
+                    }
+                }
+            });
+        }
+
+        // Keyboard Shortcuts
+        function setupKeyboardShortcuts() {
+            document.addEventListener('keydown', (e) => {
+                // Ctrl/Cmd + K for search focus
+                if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                    e.preventDefault();
+                    document.getElementById('examSearch').focus();
+                }
+                
+                // Escape to close modal
+                if (e.key === 'Escape') {
+                    const modal = document.getElementById('examModal');
+                    if (modal.classList.contains('active')) {
+                        closeModal();
+                    }
+                }
+                
+                // Ctrl/Cmd + B for bookmarks
+                if ((e.ctrlKey || e.metaKey) && e.key === 'b') {
+                    e.preventDefault();
+                    showBookmarks();
+                }
+                
+                // ? for help/tour
+                if (e.key === '?' && !e.target.matches('input, textarea')) {
+                    e.preventDefault();
+                    startTour();
+                }
+            });
+        }
+
+        // Auto-save functionality
+        function setupAutoSave() {
+            setInterval(() => {
+                // In a real app, this would save to localStorage or server
+                const dataToSave = {
+                    bookmarkedExams: Array.from(bookmarkedExams),
+                    examProgress: examProgress,
+                    studyStreak: studyStreak,
+                    studyCalendarData: studyCalendarData,
+                    userProfile: userProfile
+                };
+                
+                // Simulate saving (in real app, use localStorage or API)
+                console.log('Auto-saved user data:', dataToSave);
+            }, 30000); // Save every 30 seconds
+        }
+
+        // Welcome message for first-time users
+        function showWelcomeMessage() {
+            setTimeout(() => {
+                const welcomeModal = document.createElement('div');
+                welcomeModal.className = 'modal active';
+                welcomeModal.innerHTML = `
+                    <div class="modal-content" style="max-width: 500px;">
+                        <div class="modal-header">
+                            <h2>🎉 Welcome to Ultimate Exam Roadmaps!</h2>
+                            <button class="close-btn" onclick="this.closest('.modal').remove()">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p style="margin-bottom: 20px;">Discover comprehensive preparation guides for 78+ competitive exams across 18 categories!</p>
+                            
+                            <div style="background: var(--color-bg-1); padding: 16px; border-radius: 8px; margin-bottom: 20px;">
+                                <h4 style="margin-bottom: 12px;">✨ Key Features:</h4>
+                                <ul style="margin: 0; padding-left: 20px;">
+                                    <li>Detailed study roadmaps for each exam</li>
+                                    <li>Progress tracking and analytics</li>
+                                    <li>AI-powered recommendations</li>
+                                    <li>Exam comparison tools</li>
+                                    <li>Personal study planner</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="background: var(--color-bg-3); padding: 16px; border-radius: 8px; margin-bottom: 20px;">
+                                <h4 style="margin-bottom: 8px;">🚀 Quick Start Tips:</h4>
+                                <p style="margin: 0; font-size: 14px;">• Press <kbd>Ctrl+K</kbd> to search quickly<br>• Press <kbd>?</kbd> for guided tour<br>• Click the floating tools for advanced features</p>
+                            </div>
+                            
+                            <div style="text-align: center;">
+                                <button class="btn" onclick="startTour(); this.closest('.modal').remove();" style="margin-right: 12px;">Take a Tour 🎯</button>
+                                <button class="btn btn-secondary" onclick="this.closest('.modal').remove()">Start Exploring 🚀</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                document.body.appendChild(welcomeModal);
+                
+                // Auto-remove after 15 seconds if not interacted
+                setTimeout(() => {
+                    if (welcomeModal.parentElement) {
+                        welcomeModal.remove();
+                    }
+                }, 15000);
+            }, 1500);
+        }
+
+        // Initialize all enhanced features
+        function initializeEnhancedFeatures() {
+            setupAdvancedSearch();
+            setupKeyboardShortcuts();
+            setupAutoSave();
+            trackUserEngagement();
+            initializeStudyReminders();
+            
+            // Show welcome message for new users (simulate first visit)
+            if (Math.random() > 0.7) { // 30% chance to simulate new user
+                showWelcomeMessage();
+            }
+            
+            // Add helpful tooltips
+            setTimeout(() => {
+                createNotification('💡 Tip: Press Ctrl+K to quickly search for any exam!', 'info');
+            }, 5000);
+        }
+
+        // Initialize the application when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            init();
+            initializeEnhancedFeatures();
+        });
+
+        // Add CSS for notifications and enhanced features
+        const enhancedStyles = document.createElement('style');
+        enhancedStyles.textContent = `
+            @keyframes slideInRight {
+                from {
+                    opacity: 0;
+                    transform: translateX(100%);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+            
+            .notification {
+                animation: slideInRight 0.3s ease;
+            }
+            
+            .search-suggestions::-webkit-scrollbar {
+                width: 4px;
+            }
+            
+            .search-suggestions::-webkit-scrollbar-thumb {
+                background: var(--color-primary);
+                border-radius: 2px;
+            }
+            
+            kbd {
+                background: var(--color-secondary);
+                border: 1px solid var(--color-border);
+                border-radius: 3px;
+                padding: 2px 6px;
+                font-size: 12px;
+                font-family: var(--font-family-mono);
+            }
+            
+            .tour-tooltip {
+                animation: fadeIn 0.3s ease;
+            }
+            
+            @keyframes fadeIn {
+                from { opacity: 0; transform: scale(0.9); }
+                to { opacity: 1; transform: scale(1); }
+            }
+            
+            /* Enhanced hover effects */
+            .category-card {
+                transform-origin: center;
+            }
+            
+            .category-card:hover {
+                transform: translateY(-8px) scale(1.02);
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            
+            /* Smooth transitions for all interactive elements */
+            .btn, .filter-tag, .tool-btn, .tab {
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            
+            /* Loading animation for dynamic content */
+            .loading-shimmer {
+                background: linear-gradient(90deg, var(--color-secondary) 25%, var(--color-bg-1) 50%, var(--color-secondary) 75%);
+                background-size: 200% 100%;
+                animation: shimmer 1.5s infinite;
+            }
+            
+            @keyframes shimmer {
+                0% { background-position: -200% 0; }
+                100% { background-position: 200% 0; }
+            }
+            
+            /* Success completion animation */
+            .completion-animation {
+                animation: bounce 0.6s ease;
+            }
+            
+            @keyframes bounce {
+                0%, 20%, 60%, 100% { transform: translateY(0); }
+                40% { transform: translateY(-10px); }
+                80% { transform: translateY(-5px); }
+            }
+            
+            /* Mobile-first responsive enhancements */
+            @media (max-width: 768px) {
+                .floating-tools {
+                    bottom: 120px;
+                    right: 20px;
+                }
+                
+                .tool-btn {
+                    width: 45px;
+                    height: 45px;
+                    font-size: 14px;
+                }
+                
+                .hero h1 {
+                    font-size: 1.8rem;
+                }
+                
+                .search-suggestions {
+                    font-size: 14px;
+                }
+            }
+            
+            /* Dark mode specific enhancements */
+            @media (prefers-color-scheme: dark) {
+                .achievement-badge {
+                    box-shadow: 0 0 20px rgba(50, 184, 198, 0.3);
+                }
+                
+                .category-card:hover {
+                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+                }
+            }
+        `;
+        document.head.appendChild(enhancedStyles);
+    </script>
+</body>
+</html>
